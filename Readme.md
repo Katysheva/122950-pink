@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Elizabeth Anatskaya](https://up.htmlacademy.ru/adaptive/9/user/122950).
-* Наставник: `Неизвестно`.
+* Наставник: `Макс Пушкарев`.
 
 ---
 
