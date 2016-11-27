@@ -1,12 +1,221 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body>
+<header class="main-page-header">
+  <section class="menu-header">
+    <h1 class="menu-header__title">pink</h1>
+    <button title="show menu" type="button" class="menu-header__hamburger"></button>
+  </section>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+  <nav class="menu">
+    <ul class="menu__list">
+      <li>
+        <section class="menu-header">
+          <h1 class="menu-header__title">pink</h1>
+          <button title="show menu" type="button" class="menu-header__hamburger"></button>
+        </section>
+      </li>
+      <li>главная</li>
+      <li>фотография</li>
+      <li>конкурс</li>
+      <li>html-academy</li>
+    </ul>
+  </nav>
 
-  </body>
+  <section class="introduction">
+    <img src="http://placehold.it/150x100">
+
+    <a class="button" href="#">скачать приложение</a>
+
+    <ul class="os-icons">
+      <li><a id="ios-icon" href="#"></a></li>
+      <li><a id="android-icon" href="#"></a></li>
+      <li><a id="win-icon" href="#"></a></li>
+    </ul>
+    <p class="introduction__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+  </section>
+</header>
+
+<main>
+  <section class="information">
+    <header class="page-header">
+      <h2>Устали от серости мегаполиса?</h2>
+      <h2>Нам есть, что вам предложить!</h2>
+    </header>
+    <section class="advantages">
+      <div class="description-block">
+        <h3>Поднимает настроение</h3>
+        <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+      </div>
+      <div class="description-block">
+        <h3>Меняет мир вокруг</h3>
+        <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+      </div>
+      <div class="description-block">
+        <h3>Заводит новых друзей</h3>
+        <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+      </div>
+
+      <img src="http://placehold.it/314x659">
+    </section>
+
+  </section>
+
+  <section class="feedback">
+    <div class="slider">
+      <ul class="slider__items">
+        <li class="slider__item">
+          <article class="description-block">
+            <h3>Николай Петров</h3>
+            <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </article>
+        </li>
+        <li class="slider__item">
+          <article class="description-block">
+            <h3>Николай Петров</h3>
+            <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </article>
+        </li>
+        <li class="slider__item">
+          <article class="description-block">
+            <h3>Николай Петров</h3>
+            <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </article>
+        </li>
+      </ul>
+      <ul class="slider__buttons">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="tariffs">
+    <div class="slider">
+      <ul class="slider__items">
+        <li class="slider__item">
+<!--1-->
+          <table>
+            <thead>
+            <tr>
+              <th>
+                <h3>база</h3>
+                <p>1,99 USD</p>
+              </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="tariff-feature">
+              <td>розовый фильтр</td>
+              <td class="tariff-feature__access tariff-feature__access--enable"></td>
+            </tr>
+            <tr>
+              <td>смайлики</td>
+              <td class="tariff-feature__access tariff-feature__access--disable"></td>
+            </tr>
+            <tr>
+              <td>комментарии</td>
+              <td class="tariff-feature__access tariff-feature__access--disable"></td>
+            </tr>
+            </tbody>
+          </table>
+<!--2-->
+          <table>
+            <thead>
+            <tr>
+              <th>
+                <div class="mark"></div>
+                <h3>стандарт</h3>
+                <p>3,99 USD</p>
+              </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="tariff-feature">
+              <td>розовый фильтр</td>
+              <td class="tariff-feature__access tariff-feature__access--enable"></td>
+            </tr>
+            <tr>
+              <td>смайлики</td>
+              <td class="tariff-feature__access tariff-feature__access--enable"></td>
+            </tr>
+            <tr>
+              <td>комментарии</td>
+              <td class="tariff-feature__access tariff-feature__access--disable"></td>
+            </tr>
+            </tbody>
+          </table>
+<!--3-->
+          <table>
+            <thead>
+            <tr>
+              <th>
+                <h3>анлим</h3>
+                <p>9,99 USD</p>
+              </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="tariff-feature">
+              <td>розовый фильтр</td>
+              <td class="tariff-feature__access tariff-feature__access--enable"></td>
+            </tr>
+            <tr>
+              <td>смайлики</td>
+              <td class="tariff-feature__access tariff-feature__access--enable"></td>
+            </tr>
+            <tr>
+              <td>комментарии</td>
+              <td class="tariff-feature__access tariff-feature__access--disable"></td>
+            </tr>
+            </tbody>
+          </table>
+        </li>
+
+      </ul>
+      <ul class="slider__buttons">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    </div>
+  </section>
+</main>
+
+<footer class="main-page-footer">
+  <section class="contacts">
+    <header class="page-header">
+      <h2>Остались вопросы?
+        Свяжитесь с нами!</h2>
+    </header>
+
+    <section class="vcard">
+    <div class="description-block">
+      <h3>Звоните:</h3>
+      <a href="tel:+7 (812) 555-66-66" class="tel accent-color-text">+7 (812) 555-66-66</a>
+    </div>
+    <div class="description-block">
+      <h3>Пишите:</h3>
+      <a href="mailto:mail@htmlacademy.ru" class="email accent-color-text">mail@htmlacademy.ru</a>
+    </div>
+    <div class="description-block">
+      <h3>Приезжайте в гости:</h3>
+      <address class="adr accent-color-text">ул. Большая Конюшенная, 19/8</address>
+    </div>
+    </section>
+  </section>
+</footer>
+</body>
 </html>
