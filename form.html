@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>forms</title>
+</head>
+<body>
+<header class="page-header">
+
+  <section class="menu-header">
+    <a href="#" class="menu-header__title">pink</a>
+    <button title="show menu" type="button" class="menu-header__hamburger"></button>
+    <nav class="menu">
+      <ul class="menu__list">
+        <li><a href="#"></a></li>
+        <li><a href="#">фотография</a></li>
+        <li><a href="#">конкурс</a></li>
+        <li><a href="#">html-academy</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <section class="introduction">
+    <img src="http://placehold.it/150x100" alt="">
+    <h1>Фотографии пользователей</h1>
+  </section>
+</header>
+
+<main>
+
+  <h2 class="page-content-title">Взгляните на фотографии, которые выкладывают пользователи!
+    Видите, как не хватает ваших?</h2>
+
+  <form class="form">
+
+    <ul class="form__initials-item">
+      <li>
+        <label for="last-name">Фамилия:</label>
+        <input id="last-name" name="last-name" type="text" value="Укажите фамилию *">
+      </li>
+      <li>
+        <label for="name">Имя:</label>
+        <input id="name" name="name" type="text" value="Введите ваше имя *">
+      </li>
+      <li>
+        <label for="patronymic">Отчество:</label>
+        <input id="patronymic" name="patronymic" type="text" value="Ну и отчество тоже">
+      </li>
+    </ul>
+
+    <ul class="form__achievements-item">
+      <h3 class="form__title">Ваши безбашенные достижения в путешествии</h3>
+      <li>
+        <label for="achievements-item-1">Сделал селфи с акулой</label>
+        <input id="achievements-item-1" name="achievements" type="checkbox" value="Selfie with a shark" checked>
+      </li>
+      <li>
+        <label for="achievements-item-2">Обгорел на пляже</label>
+        <input id="achievements-item-2" name="Got burn" type="checkbox" checked>
+      </li>
+      <li>
+        <label for="achievements-item-3">Видел Чака Норриса</label>
+        <input id="achievements-item-3" name="Saw Chuck Norris" type="checkbox">
+      </li>
+      <li>
+        <label for="achievements-item-4">Накупил сувениров</label>
+        <input id="achievements-item-4" name="Bought souvenirs" type="checkbox">
+      </li>
+      <li>
+        <label for="achievements-item-5">Удержал башню</label>
+        <input id="achievements-item-5" name="Kept a tower" type="checkbox" checked>
+      </li>
+      <li>
+        <label for="achievements-item-6">Разгромил отель</label>
+        <input id="achievements-item-6" name="Smashed up a hotel" type="checkbox">
+      </li>
+    </ul>
+
+    <ul class="form__contacts-item">
+      <li>
+        <label for="tel">Номер телефона</label>
+        <input id="tel" name="telephone-number" type="tel" value="Номер, пожалуйста">
+      </li>
+      <li>
+        <label for="email">адресок почты</label>
+        <input id="email" name="email" type="email" value="Введите почту *">
+      </li>
+    </ul>
+
+    <ul class="form__apps-item">
+      <h3 class="form__title">С каким приложением путешествовали?</h3>
+      <li>
+        <label for="apps-item-1">Pink для iOS</label>
+        <input id="apps-item-1" name="iOS" type="radio" checked>
+      </li>
+      <li>
+        <label for="apps-item-2">Pink на Android</label>
+        <input id="apps-item-2" name="Android" type="radio">
+      </li>
+      <li>
+        <label for="apps-item-3">Windows Phone</label>
+        <input id="apps-item-3" name="Windows" type="radio">
+      </li>
+    </ul>
+
+    <ul class="form__emotions-item">
+      <li>
+        <label for="emotions">Опишите свои эмоции</label>
+        <textarea id="emotions" name="emotions">Можно прям в красках, не стесняясь в выражениях</textarea>
+      </li>
+    </ul>
+
+    <button class="button" type="submit">Отправить форму</button>
+
+    <p><span>*</span> — обязательные поля</p>
+  </form>
+</main>
+
+<footer>
+  <div class="footer-logo">
+    <a href="index.html" class="footer-logo__item">pink</a>
+  </div>
+  <ul class="social-icons">
+    <li class="social-icons__item">
+      <a href="#" class="social-icons__item--twitter">Twitter</a>
+    </li>
+    <li class="social-icons__item">
+      <a href="#" class="social-icons__item--facebook">Facebook</a>
+    </li>
+    <li class="social-icons__item">
+      <a href="#" class="social-icons__item--youtube">Youtube</a>
+    </li>
+  </ul>
+  <div class="footer-copyright">
+    <span>Разработано</span>
+    <span class="html-academy-icon"></span>
+  </div>
+</footer>
+</body>
+</html>
