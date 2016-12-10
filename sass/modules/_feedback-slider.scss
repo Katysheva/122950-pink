@@ -1,0 +1,19 @@
+.feedback-slider {
+  padding: 20px 0;
+}
+
+.feedback-slider__list {
+  line-height: 30px;
+}
+
+.feedback-slider__item {
+  h3 {
+    font-family: $opensans-bold;
+    font-size: 18px;
+  }
+}
+
+.feedback-slider__list .feedback-slider__item:nth-child(n+2) {
+  display: none;
+}
+

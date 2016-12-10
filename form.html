@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>forms</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
+<div class="container">
 <header class="page-header">
 
-  <section class="menu-header">
-    <a href="#" class="menu-header__title">pink</a>
-    <button title="show menu" type="button" class="menu-header__hamburger"></button>
-    <nav class="menu">
-      <ul class="menu__list">
-        <li><a href="#"></a></li>
+  <section class="page-header-menu">
+    <a href="#" class="logo">pink</a>
+    <button title="show menu" type="button" class="page-header-menu__toggle"></button>
+    <nav class="page-header-menu__navigation">
+      <ul class="page-header-menu__navigation-list">
+        <li><a href="#">главная</a></li>
         <li><a href="#">фотография</a></li>
         <li><a href="#">конкурс</a></li>
         <li><a href="#">html-academy</a></li>
@@ -20,16 +22,18 @@
     </nav>
   </section>
 
-  <section class="introduction">
+  <section class="page-header__title">
     <img src="http://placehold.it/150x100" alt="">
-    <h1>Фотографии пользователей</h1>
+    <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
   </section>
 </header>
 
 <main>
 
-  <h2 class="page-content-title">Взгляните на фотографии, которые выкладывают пользователи!
+  <div class="page-introduction">
+    <h2 class="page-introduction__content">Взгляните на фотографии, которые выкладывают пользователи!
     Видите, как не хватает ваших?</h2>
+  </div>
 
   <form class="form">
 
@@ -110,9 +114,9 @@
       </li>
     </ul>
 
-    <button class="button" type="submit">Отправить форму</button>
+    <button class="rectangular-button" type="submit">Отправить форму</button>
 
-    <p><span>*</span> — обязательные поля</p>
+    <p class="form__comment"><span>*</span> — обязательные поля</p>
   </form>
 </main>
 
@@ -136,5 +140,6 @@
     <span class="html-academy-icon"></span>
   </div>
 </footer>
+</div>
 </body>
 </html>

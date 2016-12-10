@@ -1,0 +1,16 @@
+.page-header {
+
+}
+
+.page-header__title {
+  font-family: $opensans-light;
+  font-size: 24px;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  min-height: 395px;
+  position: relative;
+  img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}

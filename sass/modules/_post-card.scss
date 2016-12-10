@@ -1,0 +1,17 @@
+.post-card {
+  .post-card__title {
+    font-family: $opensans-bold;
+
+    span {
+      font-family: $opensans-light;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+  }
+
+  .post-card__like {
+    text-transform: uppercase;
+    color: $pink-color;
+  }
+
+}

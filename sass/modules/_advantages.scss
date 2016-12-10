@@ -1,0 +1,29 @@
+.advantages {
+  background-color: $light-grey-color;
+  padding: 56px 0 47px;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 30px solid $light-grey-color;
+    border-left: $phone-width solid $white-color;
+    width: 42px;
+    height: 0;
+    box-sizing: border-box;
+  }
+
+  img {
+    margin-bottom: -95px;
+  }
+}
+
+.advantages__item-title {
+  font-family: $opensans-bold;
+  font-size: 18px;
+  line-height: 10px;
+  background-color: #f2f2f2;
+}

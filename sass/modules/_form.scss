@@ -1,0 +1,22 @@
+.form {
+
+  line-height: 30px;
+
+  .form__initials-item {
+
+    label {
+      text-transform: uppercase;
+      color: $pink-color;
+    }
+    input {
+      font-size: 18px;
+    }
+  }
+
+  .form-comment {
+    text-transform: uppercase;
+    span {
+      color: $pink-color;
+    }
+  }
+}

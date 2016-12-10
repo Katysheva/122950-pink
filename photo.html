@@ -3,199 +3,198 @@
 <head>
   <meta charset="UTF-8">
   <title>photo</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
+<div class="container">
+  <header class="page-header">
 
-<header class="page-header">
+    <section class="page-header-menu">
+      <a href="#" class="logo">pink</a>
+      <button title="show menu" type="button" class="page-header-menu__toggle"></button>
+      <nav class="page-header-menu__navigation">
+        <ul class="page-header-menu__navigation-list">
+          <li><a href="#">главная</a></li>
+          <li><a href="#">фотография</a></li>
+          <li><a href="#">конкурс</a></li>
+          <li><a href="#">html-academy</a></li>
+        </ul>
+      </nav>
+    </section>
 
-  <section class="menu-header">
-    <a href="#" class="menu-header__title">pink</a>
-    <button title="show menu" type="button" class="menu-header__hamburger"></button>
-    <nav class="menu">
-      <ul class="menu__list">
-        <li><a href="#"></a></li>
-        <li><a href="#">фотография</a></li>
-        <li><a href="#">конкурс</a></li>
-        <li><a href="#">html-academy</a></li>
-      </ul>
-    </nav>
-  </section>
-
-  <section class="introduction">
-    <img src="http://placehold.it/150x100" alt="">
-    <h1>Фотографии пользователей</h1>
-  </section>
-</header>
-
-<main>
-
-  <h2 class="page-content-title">Взгляните на фотографии, которые выкладывают пользователи!
-    Видите, как не хватает ваших?</h2>
-
-  <section class="post">
-    <!--1-->
-    <article class="post-card post-card--top">
-
-      <div class="mark">Панорама дня</div>
-      <img src="http://placehold.it/320x137" alt="">
-
-      <div class="post-card__post">
-        <p class="post-card__title">Анна<span>(5 минут назад)</span></p>
-        <p class="post-card__post-content">
-          Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую
-          трансляцию в перископе, задавайте свои вопросы!</p>
-
-        <div class="post-card__like">
-          <a href="#">нравится:
-            <span class="post-card__like-amount">215</span>
-          </a>
-        </div>
-      </div>
-    </article>
-    <!--2-->
-    <article class="post-card">
-      <img src="http://placehold.it/280x180" alt="">
-
-      <div class="post-card__post">
-        <p class="post-card__title">Левон<span>(5 часов назад)</span></p>
-        <p class="post-card__post-content">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-
-        <div class="post-card__like">
-          <a href="#">нравится:
-            <span class="post-card__like-amount">356</span>
-          </a>
-        </div>
-      </div>
-    </article>
-    <!--3-->
-    <article class="post-card">
-      <img src="http://placehold.it/280x180" alt="">
-
-      <div class="post-card__post">
-        <p class="post-card__title">Антон<span>(12 часов назад)</span></p>
-        <p class="post-card__post-content">Соседи будут рады!</p>
-
-        <div class="post-card__like">
-          <a href="#">нравится:
-            <span class="post-card__like-amount">666</span>
-          </a>
-        </div>
-      </div>
-    </article>
-    <!--4-->
-    <article class="post-card">
-      <img src="http://placehold.it/280x180" alt="">
-
-      <div class="post-card__post">
-        <p class="post-card__title">Борис<span>(20 часов назад)</span></p>
-        <p class="post-card__post-content">Здесь могла быть ваша цитата о высоком и вечном.</p>
-
-        <div class="post-card__like">
-          <a href="#">нравится:
-            <span class="post-card__like-amount">215</span>
-          </a>
-        </div>
-      </div>
-    </article>
-    <!--5-->
-    <article class="post-card">
-      <img src="http://placehold.it/280x180" alt="">
-
-      <div class="post-card__post">
-        <p class="post-card__title">Сергей<span>(125 часов назад)</span></p>
-        <p class="post-card__post-content">Самая кубанская в мире!</p>
-
-        <div class="post-card__like">
-          <a href="#">нравится:
-            <span class="post-card__like-amount">4</span>
-          </a>
-        </div>
-      </div>
-    </article>
-    <!--6-->
-    <article class="post-card">
-      <img src="http://placehold.it/280x180" alt="">
-
-      <div class="post-card__post">
-        <p class="post-card__title">Максим<span>(40 часов назад)</span></p>
-        <p class="post-card__post-content">Самая кубанская в мире!</p>
-
-        <div class="post-card__like">
-          <a href="#">нравится:
-            <span class="post-card__like-amount">150</span>
-          </a>
-        </div>
-      </div>
-    </article>
-    <!--7-->
-    <article class="post-card">
-      <img src="http://placehold.it/280x180" alt="">
-
-      <div class="post-card__post">
-        <p class="post-card__title">Надежда<span>(45 часов назад)</span></p>
-        <p class="post-card__post-content">Всем GM и взаимные лайки!</p>
-
-        <div class="post-card__like">
-          <a href="#">нравится:
-            <span class="post-card__like-amount">2560</span>
-          </a>
-        </div>
-      </div>
-    </article>
-  </section>
-
-  <section class="photo-posting">
-    <h2 class="photo-posting-title">Затмите их всех!
-      Выкладывайте все, что накопилось в телефоне!</h2>
-
-    <div class="photo-posting__settings">
+    <section class="page-header__title">
       <img src="http://placehold.it/150x100" alt="">
+      <h1>Фотографии пользователей</h1>
+    </section>
+  </header>
 
-      <form action="#">
-        <div class="photo-posting__tools">
-          <ul class="photo-posting__filters">
-            <li>
-              <input id="crop" type="radio"><label for="crop"></label>
-            </li>
-            <li>
-              <input id="color" type="radio"><label for="color"></label>
-            </li>
-            <li>
-              <input id="brightness" type="radio"><label for="brightness"></label>
-            </li>
-          </ul>
-          <div class="photo-posting__slider">
-            <input id="slider" type="range"><label for="slider"></label>
-          </div>
-        </div>
-      </form>
+  <main>
 
-      <div class="posting-block__buttons">
-        <button class="upload-button" type="submit"></button>
-        <button class="upload-button upload-button--cancel" type="reset"></button>
-      </div>
+    <div class="page-introduction">
+      <h2 class="page-introduction__content">Взгляните на фотографии, которые выкладывают пользователи!
+        Видите, как не хватает ваших?</h2>
     </div>
-  </section>
-</main>
 
-<footer>
-  <div class="footer-logo">
-    <a href="index.html" class="footer-logo__item">pink</a>
-  </div>
-  <ul class="social-icons">
-    <li class="social-icons__item">
-      <a href="#" class="social-icons__item--twitter">Twitter</a>
-    </li>
-    <li class="social-icons__item">
-      <a href="#" class="social-icons__item--facebook">Facebook</a>
-    </li>
-    <li class="social-icons__item">
-      <a href="#" class="social-icons__item--youtube">Youtube</a>
-    </li>
-  </ul>
-  <div class="footer-copyright">
-    <span>Разработано</span>
-    <span class="html-academy-icon"></span>
-  </div>
-</footer>
+    <section class="post">
+      <!--1-->
+      <article class="post-card post-card--top">
+
+        <div class="post-card__photo">
+          <div class="mark">Панорама дня</div>
+          <img src="http://placehold.it/320x137" alt="">
+        </div>
+
+        <div class="post-card__post">
+          <p class="post-card__title">Анна<span>(5 минут назад)</span></p>
+          <p class="post-card__content">
+            Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую
+            трансляцию в перископе, задавайте свои вопросы!</p>
+          <p class="post-card__like">
+            <a href="#">нравится:
+              <span class="post-card__like-amount">215</span>
+            </a>
+          </p>
+        </div>
+      </article>
+      <!--2-->
+      <article class="post-card">
+        <img src="http://placehold.it/280x180" alt="">
+        <div class="post-card__post">
+          <p class="post-card__title">Левон<span>(5 часов назад)</span></p>
+          <p class="post-card__content">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <p class="post-card__like">
+            <a href="#">нравится:
+              <span class="post-card__like-amount">356</span>
+            </a>
+          </p>
+        </div>
+      </article>
+      <!--3-->
+      <article class="post-card">
+        <img src="http://placehold.it/280x180" alt="">
+
+        <div class="post-card__post">
+          <p class="post-card__title">Антон<span>(12 часов назад)</span></p>
+          <p class="post-card__content">Соседи будут рады!</p>
+          <p class="post-card__like">
+            <a href="#">нравится:
+              <span class="post-card__like-amount">666</span>
+            </a>
+          </p>
+        </div>
+      </article>
+      <!--4-->
+      <article class="post-card">
+        <img src="http://placehold.it/280x180" alt="">
+
+        <div class="post-card__post">
+          <p class="post-card__title">Борис<span>(20 часов назад)</span></p>
+          <p class="post-card__content">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <p class="post-card__like">
+            <a href="#">нравится:
+              <span class="post-card__like-amount">215</span>
+            </a>
+          </p>
+        </div>
+      </article>
+      <!--5-->
+      <article class="post-card">
+        <img src="http://placehold.it/280x180" alt="">
+
+        <div class="post-card__post">
+          <p class="post-card__title">Сергей<span>(125 часов назад)</span></p>
+          <p class="post-card__content">Самая кубанская в мире!</p>
+          <p class="post-card__like">
+            <a href="#">нравится:
+              <span class="post-card__like-amount">4</span>
+            </a>
+          </p>
+        </div>
+      </article>
+      <!--6-->
+      <article class="post-card">
+        <img src="http://placehold.it/280x180" alt="">
+
+        <div class="post-card__post">
+          <p class="post-card__title">Максим<span>(40 часов назад)</span></p>
+          <p class="post-card__content">Самая кубанская в мире!</p>
+          <p class="post-card__like">
+            <a href="#">нравится:
+              <span class="post-card__like-amount">150</span>
+            </a>
+          </p>
+        </div>
+      </article>
+      <!--7-->
+      <article class="post-card">
+        <img src="http://placehold.it/280x180" alt="">
+
+        <div class="post-card__post">
+          <p class="post-card__title">Надежда<span>(45 часов назад)</span></p>
+          <p class="post-card__content">Всем GM и взаимные лайки!</p>
+          <p class="post-card__like">
+            <a href="#">нравится:
+              <span class="post-card__like-amount">2560</span>
+            </a>
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section class="photo-posting">
+      <h2 class="photo-posting__title">Затмите их всех!
+        Выкладывайте все, что накопилось в телефоне!</h2>
+
+      <div class="photo-posting__settings">
+        <img src="http://placehold.it/150x100" alt="">
+
+        <form action="#">
+          <div class="photo-posting__tools">
+            <ul class="photo-posting__filters">
+              <li>
+                <input id="crop" type="radio"><label for="crop"></label>
+              </li>
+              <li>
+                <input id="color" type="radio"><label for="color"></label>
+              </li>
+              <li>
+                <input id="brightness" type="radio"><label for="brightness"></label>
+              </li>
+            </ul>
+            <div class="photo-posting__slider">
+              <input id="slider" type="range"><label for="slider"></label>
+            </div>
+          </div>
+        </form>
+
+        <div class="photo-posting__buttons">
+          <button class="rounded-button rounded-button--pink" type="submit"></button>
+          <button class="rounded-button rounded-button--grey" type="reset"></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-logo">
+      <a href="index.html" class="footer-logo__item">pink</a>
+    </div>
+    <ul class="social-icons">
+      <li class="social-icons__item">
+        <a href="#" class="social-icons__item--twitter">Twitter</a>
+      </li>
+      <li class="social-icons__item">
+        <a href="#" class="social-icons__item--facebook">Facebook</a>
+      </li>
+      <li class="social-icons__item">
+        <a href="#" class="social-icons__item--youtube">Youtube</a>
+      </li>
+    </ul>
+    <div class="footer-copyright">
+      <span>Разработано</span>
+      <span class="html-academy-icon"></span>
+    </div>
+  </footer>
+</div>
 </body>
+</html>
