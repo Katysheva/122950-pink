@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>forms</title>
+  <link href="css/style.css" rel="stylesheet">
+  <base href="https://htmlacademy-adaptive.github.io/122950-pink/3/">
+</head>
+<body>
+  <header>
+    <section class="page-header">
+      <div class="page-header-menu">
+        <a href="#" class="logo">pink</a>
+        <button title="show menu" type="button" class="page-header-menu__toggle"></button>
+
+        <nav class="page-header-menu__navigation">
+          <ul class="page-header-menu__navigation-list">
+            <li><a href="#">главная</a></li>
+            <li><a href="#">фотография</a></li>
+            <li><a href="#">конкурс</a></li>
+            <li><a href="#">html-academy</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container page-header__title">
+        <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <div class="container page-introduction">
+      <h2 class="page-introduction__content">Взгляните на фотографии, которые выкладывают пользователи!
+        Видите, как не хватает ваших?</h2>
+    </div>
+
+    <form class="form">
+
+      <ul class="container form__initials-item">
+        <li>
+          <label for="last-name">Фамилия:</label>
+          <input id="last-name" name="last-name" type="text" placeholder="Укажите фамилию *">
+        </li>
+        <li>
+          <label for="name">Имя:</label>
+          <input id="name" name="name" type="text" placeholder="Введите ваше имя *">
+        </li>
+        <li>
+          <label for="patronymic">Отчество:</label>
+          <input id="patronymic" name="patronymic" type="text" placeholder="Ну и отчество тоже">
+        </li>
+      </ul>
+
+      <ul class="form__achievements-item">
+        <div class="container">
+        <h3 class="form__title">Ваши безбашенные достижения в путешествии</h3>
+        <li>
+          <input id="achievements-item-1" name="achievements" type="checkbox" value="Selfie with a shark" checked>
+          <label for="achievements-item-1">Сделал селфи с акулой</label>
+        </li>
+        <li>
+          <input id="achievements-item-2" name="Got burn" type="checkbox" checked>
+          <label for="achievements-item-2">Обгорел на пляже</label>
+        </li>
+        <li>
+          <input id="achievements-item-3" name="Saw Chuck Norris" type="checkbox">
+          <label for="achievements-item-3">Видел Чака Норриса</label>
+        </li>
+        <li>
+          <input id="achievements-item-4" name="Bought souvenirs" type="checkbox">
+          <label for="achievements-item-4">Накупил сувениров</label>
+        </li>
+        <li>
+          <input id="achievements-item-5" name="Kept a tower" type="checkbox" checked>
+          <label for="achievements-item-5">Удержал башню</label>
+        </li>
+        <li>
+          <input id="achievements-item-6" name="Smashed up a hotel" type="checkbox">
+          <label for="achievements-item-6">Разгромил отель</label>
+        </li>
+        </div>
+      </ul>
+
+      <ul class=" container form__contacts-item">
+        <li>
+          <label for="tel">Номер телефона</label>
+          <input id="tel" name="telephone-number" type="tel" placeholder="Номер, пожалуйста">
+        </li>
+        <li>
+          <label for="email">Адресок почты</label>
+          <input id="email" name="email" type="email" placeholder="Введите почту *">
+        </li>
+      </ul>
+
+      <ul class="container form__apps-item">
+        <h3 class="form__title">С каким приложением путешествовали?</h3>
+        <li>
+          <input id="apps-item-1" name="OS" type="radio" checked>
+          <label for="apps-item-1">Pink для iOS</label>
+        </li>
+        <li>
+          <input id="apps-item-2" name="OS" type="radio">
+          <label for="apps-item-2">Pink на Android</label>
+        </li>
+        <li>
+          <input id="apps-item-3" name="OS" type="radio">
+          <label for="apps-item-3">Windows Phone</label>
+        </li>
+      </ul>
+
+      <ul class="container form__emotions-item">
+        <li>
+          <label for="emotions">Опишите свои эмоции</label>
+          <textarea id="emotions" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </li>
+      </ul>
+
+      <button class="rectangular-button" type="submit">Отправить форму</button>
+
+      <p class="form__comment"><span>*</span> — обязательные поля</p>
+    </form>
+  </main>
+
+  <footer>
+    <div class="footer-logo">
+      <a href="index.html" class="footer-logo__item">pink</a>
+    </div>
+    <ul class="social-icons">
+      <li>
+        <a href="#" class="social-icons__item social-icons__item--twitter">Twitter</a>
+      </li>
+      <li>
+        <a href="#" class="social-icons__item social-icons__item--facebook">Facebook</a>
+      </li>
+      <li>
+        <a href="#" class="social-icons__item social-icons__item--youtube">Youtube</a>
+      </li>
+    </ul>
+    <div class="footer-copyright">
+      <span>Разработано</span>
+      <a href="https://htmlacademy.ru/" class="html-academy-icon"></a>
+    </div>
+  </footer>
+</body>
+</html>
