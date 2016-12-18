@@ -1,17 +1,56 @@
-.post-card {
-  .post-card__title {
-    font-family: $opensans-bold;
+.post-card__title {
+  font-family: $opensans-bold;
 
-    span {
-      font-family: $opensans-light;
-      font-size: 12px;
-      text-transform: uppercase;
-    }
+  span {
+    font-family: $opensans-light;
+    font-size: 12px;
+    text-transform: uppercase;
   }
+}
 
-  .post-card__like {
+.post-card__like {
+  padding-top: 20px;
+
+  a {
     text-transform: uppercase;
     color: $pink-color;
-  }
+    position: relative;
+    padding-left: 20px;
 
+    &::before {
+      content: '';
+      background-image: url(../img/icon-heart.svg);
+      height: 13px;
+      position: absolute;
+      width: 13px;
+      background-repeat: no-repeat;
+      left: 0;
+      bottom: 3px;
+    }
+  }
 }
+
+.post-card {
+  margin-top: 20px;
+  background-color: $light-grey-color;
+  text-align: left;
+  max-width: 280px;
+
+  //&--top .post-card__photo {
+  //  width: 100%;
+  //  margin: 0;
+  //}
+}
+
+.post-card__post {
+  padding: 25px 17px;
+}
+
+.post .post-card:first-child {
+  margin-top: 0;
+}
+
+.post-card__photo--top {
+  position: relative;
+}
+

@@ -1,5 +1,5 @@
 .tariffs-slider {
-  padding: 35px 0;
+  padding-top: 35px;
   background-color: $light-grey-color;
   position: relative;
 
@@ -14,23 +14,22 @@
     height: 0;
     box-sizing: border-box;
   }
+}
 
-  .tariffs-slider__list {
-    text-transform: uppercase;
-    line-height: 30px;
+.tariffs-slider__list {
+  text-transform: uppercase;
+  line-height: 30px;
+}
+
+.tariffs-slider__item {
+  h3 {
+    font-size: 18px;
+    font-family: $opensans-bold;
+  }
+
+  p {
+    font-size: 24px;
+    font-family: $opensans-light;
   }
 }
 
-.tariffs-slider {
-  .tariffs-slider__item {
-    h3 {
-      font-size: 18px;
-      font-family: $opensans-bold;
-    }
-
-    p {
-      font-size: 24px;
-      font-family: $opensans-light;
-    }
-  }
-}

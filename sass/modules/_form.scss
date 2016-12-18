@@ -1,22 +1,186 @@
 .form {
-
   line-height: 30px;
 
-  .form__initials-item {
+  input,
+  textarea {
+    font-size: 18px;
+    padding: 20px 22px;
+    width: 100%;
+    outline: none;
+    border: 2px solid $light-grey-color;
+    border-radius: 1px;
+    font-family: $opensans;
 
-    label {
-      text-transform: uppercase;
-      color: $pink-color;
+    &:-moz-placeholder {
+      color: $grey-color;
     }
-    input {
-      font-size: 18px;
+
+    &:-ms-input-placeholder {
+      color: $grey-color;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $grey-color;
     }
   }
 
-  .form-comment {
+  li {
+    text-align: left;
+  }
+}
+
+.form__initials-item {
+
+  label {
     text-transform: uppercase;
-    span {
-      color: $pink-color;
-    }
+    color: $pink-color;
+    margin-left: 23px;
+  }
+
+  li {
+    margin-bottom: 25px;
+  }
+}
+
+.form-comment {
+  text-transform: uppercase;
+
+  span {
+    color: $pink-color;
+  }
+}
+
+.form__title {
+  text-transform: uppercase;
+  color: $pink-color;
+  font-weight: 100;
+  padding: 40px 0;
+}
+
+.form__achievements-item {
+  background-color: $light-grey-color;
+
+  li {
+    padding-left: 70px;
+    padding-bottom: 40px;
+  }
+}
+
+.form__achievements-item input[type="checkbox"] {
+  display: none;
+}
+
+.form__achievements-item label::before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #e5e5e5;
+  position: absolute;
+  left: 20px;
+}
+
+.form__achievements-item input[type=checkbox]:checked + label::before {
+
+  background-image: url("../img/icon-yes.svg");
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 20px;
+  background-repeat: no-repeat;
+  background-position: 7px 8px;
+}
+
+.form__contacts-item {
+  padding-top: 10px;
+  padding-bottom: 40px;
+
+  li {
+    padding-top: 30px;
+  }
+
+  label {
+    text-transform: uppercase;
+    color: $pink-color;
+  }
+
+  input {
+    margin-top: 10px;
+  }
+}
+
+.form__apps-item {
+  background-color: $light-grey-color;
+  padding-bottom: 40px;
+
+  li {
+    padding-bottom: 60px;
+    position: relative;
+  }
+
+  li:last-child {
+    padding-bottom: 0;
+  }
+
+  input {
+    width: 40px;
+  }
+
+  label {
+    padding-left: 70px;
+    position: relative;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  label::before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #e5e5e5;
+    background-color: $white-color;
+    border-radius: 50px;
+    position: absolute;
+    left: 0;
+    top: -10px;
+  }
+
+  input[type=radio]:checked + label::before {
+    background-image: url("../img/icon-map-marker.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+}
+
+.form__emotions-item {
+  margin: 40px 0;
+
+  label {
+    text-transform: uppercase;
+    color: $pink-color;
+  }
+
+  li {
+    text-align: center;
+  }
+
+  textarea {
+    width: 100%;
+    min-height: 200px;
+    resize: none;
+    padding: 20px;
+    margin-top: 20px;
+  }
+}
+
+.form__comment {
+  padding-top: 45px;
+
+  span {
+    color: $pink-color;
   }
 }

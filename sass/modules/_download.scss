@@ -1,9 +1,36 @@
 .download {
   background-color: #1d2631;
   color: $white-color;
-  padding: 28px 0;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
 
-  .download__description {
-    font-family: $opensans-light;
-  }
+.download__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.download__list-item a {
+  width: 46px;
+  height: 57px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.ios-icon {
+  background-image: url("../img/logo-apple.svg");
+}
+
+.android-icon {
+  background-image: url("../img/logo-android.svg");
+}
+
+.win-icon {
+  background-image: url("../img/logo-microsoft.svg");
+}
+
+.download__description {
+  font-family: $opensans-light;
 }
