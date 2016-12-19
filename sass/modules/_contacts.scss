@@ -1,0 +1,24 @@
+.contacts {
+  font-size: 24px;
+  padding: 18px 0 0;
+  //background-image: url(../img/bg-map-mobile@1x.png);
+  //background-position: bottom;
+  //background-repeat: no-repeat;
+}
+
+.contacts__title {
+  font-family: $opensans-light;
+  font-size: 24px;
+}
+
+.contacts__list {
+  background-color: #fff;
+}
+
+.contacts__list-item {
+  h3 {
+    font-family: $opensans-bold;
+    font-size: 18px;
+    margin: 28px 0 10px 0;
+  }
+}

@@ -1,0 +1,24 @@
+.map {
+  display: flex;
+  background-image: url(../img/bg-map-mobile@1x.png);
+  background-repeat: no-repeat;
+  min-height: 200px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    background-image: url(../img/bg-triangle-white-footer.svg);
+    background-repeat: no-repeat;
+    content: "";
+    top: 0;
+    display: block;
+    background-size: contain;
+    width: 100%;
+    height: 35px;
+  }
+
+  img {
+    margin: 25% auto 0;
+    cursor: pointer;
+  }
+}

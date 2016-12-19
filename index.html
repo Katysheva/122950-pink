@@ -3,49 +3,50 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header class="page-header">
+  <header>
+    <section class="page-header page-header--main-page">
+      <div class="page-header-menu">
+        <a href="#" class="logo">pink</a>
+        <button title="show menu" type="button" class="page-header-menu__toggle">
+        </button>
 
-  <section class="menu-header">
-    <a href="#" class="menu-header__title">pink</a>
-    <button title="show menu" type="button" class="menu-header__hamburger"></button>
-    <nav class="menu">
-      <ul class="menu__list">
-        <li><a href="#">главная</a></li>
-        <li><a href="#">фотография</a></li>
-        <li><a href="#">конкурс</a></li>
-        <li><a href="#">html-academy</a></li>
+        <nav class="page-header-menu__navigation">
+          <ul class="page-header-menu__navigation-list">
+            <li><a href="#">главная</a></li>
+            <li><a href="#">фотография</a></li>
+            <li><a href="#">конкурс</a></li>
+            <li><a href="#">html-academy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section class="container download">
+      <a class="rounded-button rounded-button--white" href="#">Скачать приложение</a>
+
+      <ul class="download__list">
+        <li class="download__list-item"><a class="ios-icon" href="#"></a></li>
+        <li class="download__list-item"><a class="android-icon" href="#"></a></li>
+        <li class="download__list-item"><a class="win-icon" href="#"></a></li>
       </ul>
-    </nav>
-  </section>
 
-  <section class="introduction">
-    <img src="http://placehold.it/150x100" alt="">
-  </section>
+      <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows8</p>
+    </section>
+  </header>
 
-  <section class="download">
-    <a class="button button--download" href="#">Скачать приложение</a>
-
-    <ul class="download__list">
-      <li class="download__list-item"><a class="ios-icon" href="#"></a></li>
-      <li class="download__list-item"><a class="android-icon" href="#"></a></li>
-      <li class="download__list-item"><a class="win-icon" href="#"></a></li>
-    </ul>
-
-    <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows8</p>
-  </section>
-</header>
-
-<main>
-  <section class="information">
-
-    <div class="information__titles">
-      <h2>Устали от серости мегаполиса?</h2>
-      <h2>Нам есть, что вам предложить!</h2>
+  <main>
+    <div class="page-introduction">
+      <h2 class="page-introduction__content page-introduction__content--main-page">
+        Устали от серости мегаполиса?
+      </h2>
+      <h2 class="page-introduction__content page-introduction__content--main-page">
+        Нам есть, что вам предложить!
+      </h2>
     </div>
 
-    <section class="advantages">
+    <section class="container advantages">
       <div class="advantages__item">
         <h3 class="advantages__item-title">Поднимает настроение</h3>
         <p class="advantages__item-description">
@@ -67,30 +68,28 @@
         </p>
       </div>
 
-      <img src="http://placehold.it/314x659" alt="">
+      <img src="img/iphone-screen-mobile@1x.png" alt="">
     </section>
-  </section>
 
-  <section class="feedback">
 
-    <div class="slider">
+    <section class="container feedback-slider">
 
-      <ul class="slider__list">
-        <li class="slider__item">
+      <ul class="feedback-slider__list">
+        <li class="feedback-slider__item">
           <h3>Николай Петров</h3>
           <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
             А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
           </p>
         </li>
 
-        <li class="slider__item">
+        <li class="feedback-slider__item">
           <h3>Николай Петров</h3>
           <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
             А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
           </p>
         </li>
 
-        <li class="slider__item">
+        <li class="feedback-slider__item">
           <h3>Николай Петров</h3>
           <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
             А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
@@ -98,18 +97,52 @@
         </li>
       </ul>
 
-      <ul class="slider__bullet-buttons">
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </div>
-  </section>
+      <div class="svg-definition">
+        <svg width="80" height="12" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+            <g id="empty-bullet-button">
+              <circle cx="0" cy="0" fill="none" r="3" stroke-width="3" stroke="#283645"></circle>
+            </g>
+            <g id="bullet-button">
+              <circle cx="0" cy="0" r="3"></circle>
+            </g>
+          </defs>
+        </svg>
+      </div>
 
-  <section class="tariffs">
-    <div class="slider">
-      <ul class="slider__list">
-        <li class="slider__item">
+      <ul class="slider-bullet-buttons">
+        <li>
+          <a href="#">
+            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
+              <use x="6" y="6" xlink:href="#empty-bullet-button"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
+              <use x="6" y="6" xlink:href="#bullet-button"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
+              <use x="6" y="6" xlink:href="#bullet-button"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+    </section>
+
+    <section class="tariffs-slider">
+      <ul class="tariffs-slider__list">
+        <li class="tariffs-slider__item">
           <!--1-->
           <table>
 
@@ -128,18 +161,20 @@
               <td class="tariff-feature__access tariff-feature__access--enable"></td>
             </tr>
 
-            <tr>
+            <tr class="tariff-feature">
               <td>смайлики</td>
               <td class="tariff-feature__access tariff-feature__access--disable"></td>
             </tr>
 
-            <tr>
+            <tr class="tariff-feature">
               <td>комментарии</td>
               <td class="tariff-feature__access tariff-feature__access--disable"></td>
             </tr>
             </tbody>
           </table>
-          <!--2-->
+        </li>
+        <!--2-->
+        <li class="tariffs-slider__item">
           <table>
 
             <thead>
@@ -158,18 +193,20 @@
               <td class="tariff-feature__access tariff-feature__access--enable"></td>
             </tr>
 
-            <tr>
+            <tr class="tariff-feature">
               <td>смайлики</td>
               <td class="tariff-feature__access tariff-feature__access--enable"></td>
             </tr>
 
-            <tr>
+            <tr class="tariff-feature">
               <td>комментарии</td>
               <td class="tariff-feature__access tariff-feature__access--disable"></td>
             </tr>
             </tbody>
           </table>
-          <!--3-->
+        </li>
+        <!--3-->
+        <li class="tariffs-slider__item">
           <table>
 
             <thead>
@@ -187,12 +224,12 @@
               <td class="tariff-feature__access tariff-feature__access--enable"></td>
             </tr>
 
-            <tr>
+            <tr class="tariff-feature">
               <td>смайлики</td>
               <td class="tariff-feature__access tariff-feature__access--enable"></td>
             </tr>
 
-            <tr>
+            <tr class="tariff-feature">
               <td>комментарии</td>
               <td class="tariff-feature__access tariff-feature__access--disable"></td>
             </tr>
@@ -201,36 +238,58 @@
         </li>
       </ul>
 
-      <ul class="slider__bullet-buttons">
-        <li></li>
-        <li></li>
-        <li></li>
+      <ul class="slider-bullet-buttons">
+        <li>
+          <a href="#">
+            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
+              <use x="6" y="6" xlink:href="#bullet-button"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
+              <use x="6" y="6" xlink:href="#empty-bullet-button"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
+              <use x="6" y="6" xlink:href="#bullet-button"/>
+            </svg>
+          </a>
+        </li>
       </ul>
+    </section>
+
+  </main>
+
+  <section class="contacts">
+    <ul class="contacts__list">
+      <h2 class="contacts__title">
+        Остались вопросы?
+        Свяжитесь с нами!
+      </h2>
+      <li class="contacts__list-item">
+        <h3>Звоните:</h3>
+        <a href="tel:+7 (812) 555-66-66" class="tel accent-color-text">+7 (812) 555-66-66</a>
+      </li>
+      <li class="contacts__list-item">
+        <h3>Пишите:</h3>
+        <a href="mailto:mail@htmlacademy.ru" class="email accent-color-text">mail@htmlacademy.ru</a>
+      </li>
+      <li class="contacts__list-item">
+        <h3>Приезжайте в гости:</h3>
+        <address class="adr accent-color-text">ул. Большая Конюшенная, 19/8</address>
+      </li>
+    </ul>
+    <div class="map">
+      <img src="img/icon-map-marker.svg" alt="">
     </div>
   </section>
-</main>
-
-<section class="contacts">
-  <h2 class="contacts__title">
-    Остались вопросы?
-    Свяжитесь с нами!
-  </h2>
-
-  <section class="contacts-list">
-    <div class="contacts-list__item">
-      <h3>Звоните:</h3>
-      <a href="tel:+7 (812) 555-66-66" class="tel accent-color-text">+7 (812) 555-66-66</a>
-    </div>
-    <div class="contacts-list__item">
-      <h3>Пишите:</h3>
-      <a href="mailto:mail@htmlacademy.ru" class="email accent-color-text">mail@htmlacademy.ru</a>
-    </div>
-    <div class="contacts-list__item">
-      <h3>Приезжайте в гости:</h3>
-      <address class="adr accent-color-text">ул. Большая Конюшенная, 19/8</address>
-    </div>
-  </section>
-  <div class="map"></div>
-</section>
 </body>
 </html>

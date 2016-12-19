@@ -1,0 +1,64 @@
+footer {
+  padding: 40px;
+
+  a {
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+  }
+}
+
+.footer-logo__item {
+  background-image: url(../img/logo-pink-blue-mobile.svg);
+  height: 40px;
+  width: 146px;
+  display: block;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.social-icons {
+  padding: 40px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icons__item {
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-repeat: no-repeat;
+  border: 3px solid $light-grey-color;
+  border-radius: 50px;
+  background-position-x: 50%;
+  background-position-y: 50%;
+
+  &--twitter {
+    background-image: url("../img/icon-twitter.svg");
+  }
+
+  &--facebook {
+    background-image: url("../img/icon-facebook.svg");
+  }
+
+  &--youtube {
+    background-image: url("../img/icon-youtube.svg");
+  }
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+
+  span {
+    align-self: center;
+  }
+}
+
+.html-academy-icon {
+  background-image: url("../img/htmlacademy.svg");
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-repeat: no-repeat;
+}

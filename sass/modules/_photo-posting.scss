@@ -1,0 +1,130 @@
+.photo-posting__settings {
+  background-color: $light-grey-color;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.photo-posting__title {
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 100;
+  padding: 50px 0;
+}
+
+.photo-posting__filters {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+
+  input {
+    display: none;
+  }
+}
+
+.photo-posting__filter {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  display: block;
+  background-position: 50%;
+
+  &--crop {
+    background-image: url("../img/icon-editor-crop.svg");
+  }
+
+  &--color {
+    background-image: url("../img/icon-editor-fill.svg");
+  }
+
+  &--brightness {
+    background-image: url("../img/icon-editor-contrast.svg");
+  }
+}
+
+//input[type=range] {
+//  -webkit-appearance: none;
+//  margin: 10px 0;
+//  width: 240px;
+//}
+
+//input[type=range]:focus {
+//  outline: none;
+//}
+
+//input[type=range]::-webkit-slider-runnable-track {
+//  width: 240px;
+//  height: 2px;
+//  background-color: $grey-color;
+//}
+
+.photo-posting__slider input[type=range] {
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 240px;
+  margin-bottom: 16px;
+
+  &::-webkit-slider-runnable-track {
+    width: 240px;
+    height: 2px;
+    background-color: $grey-color;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #f2f2f2;
+    border: 2px solid $pink-color;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: -10px;
+  }
+
+  &::-moz-range-track {
+    width: 240px;
+    height: 2px;
+    background-color: $grey-color;
+  }
+
+  &::-moz-range-thumb {
+    background-color: #f2f2f2;
+    border: 2px solid $pink-color;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: -10px;
+  }
+
+  &::-ms-track {
+    width: 240px;
+    height: 2px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    border-width: 15px 0;
+    color: transparent;
+  }
+
+  &::-ms-fill-lower {
+    background: $grey-color;
+  }
+
+  &::-ms-fill-upper {
+    background: $grey-color;
+  }
+
+  &::-ms-thumb {
+    background-color: #f2f2f2;
+    border: 2px solid $pink-color;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+}

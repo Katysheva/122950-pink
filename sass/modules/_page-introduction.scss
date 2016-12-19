@@ -1,0 +1,11 @@
+.page-introduction__content {
+  line-height: 30px;
+  font-size: $base-font-size;
+  font-weight: 100;
+  margin: 55px 0;
+
+  &--main-page {
+    font-size: 24px;
+    font-family: $opensans-light;
+  }
+}

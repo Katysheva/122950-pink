@@ -1,0 +1,31 @@
+.rounded-button {
+  font-size: 18px;
+  line-height: 18px;
+  font-family: $opensans-bold;
+  padding: 17px 36px;
+  border: 3px solid #fff;
+  border-radius: 50px;
+  display: block;
+  background-color: transparent;
+  cursor: pointer;
+  width: 282px;
+  outline: none;
+
+  &--white {
+    color: $white-color;
+  }
+
+  &--pink {
+    color: $pink-color;
+    border: 3px solid $pink-color;
+  }
+
+  &--grey {
+    color: #dddfe0;
+    border: 3px solid #dddfe0;
+  }
+}
+
+.photo-posting__buttons button {
+  margin-top: 12px;
+}
