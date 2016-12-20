@@ -1,5 +1,13 @@
 footer {
-  padding: 40px;
+  @include container();
+  //padding: 40px;
+  @media ($tablet-width) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 35px 40px 50px;
+    justify-content: space-between;
+}
 
   a {
     font: 0/0 serif;
@@ -15,12 +23,18 @@ footer {
   display: block;
   background-repeat: no-repeat;
   margin: 0 auto;
+
+  @media ($desktop-width) {
+    background-image: url(../img/logo-pink-blue-mobile.svg);
+  }
 }
 
 .social-icons {
   padding: 40px 30px;
   display: flex;
   justify-content: space-between;
+  max-width: 240px;
+  margin: 0 auto;
 }
 
 .social-icons__item {
@@ -39,6 +53,7 @@ footer {
 
   &--facebook {
     background-image: url("../img/icon-facebook.svg");
+    margin: 0 15px;
   }
 
   &--youtube {
@@ -62,3 +77,4 @@ footer {
   display: block;
   background-repeat: no-repeat;
 }
+
