@@ -1,5 +1,5 @@
 .tariffs-slider {
-  padding-top: 35px;
+  padding-top: 90px;
   background-color: $light-grey-color;
   position: relative;
 
@@ -8,11 +8,11 @@
     position: absolute;
     top: 0;
     left: 0;
-    border-bottom: 30px solid #f2f2f2;
-    border-left: 320px solid #fff;
-    width: 42px;
-    height: 0;
-    box-sizing: border-box;
+    background: url(../img/bg-triangle-white.svg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 }
 
