@@ -1,12 +1,18 @@
 .slider-bullet-buttons {
   padding: 40px;
-}
 
-.slider-bullet-buttons li {
-  display: inline-block;
-}
+  li {
+    display: inline-block;
+  }
 
-.slider-bullet-buttons svg {
-  fill: $bullet-buttons-color;
-}
+  svg {
+    fill: $bullet-buttons-color;
+  }
 
+  &--tariffs {
+    @media ($tablet-width) {
+      display: none;
+    }
+
+  }
+}

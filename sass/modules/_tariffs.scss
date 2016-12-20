@@ -1,7 +1,8 @@
-.tariffs-slider {
+.tariffs {
   padding-top: 90px;
   background-color: $light-grey-color;
   position: relative;
+  overflow: hidden;
 
   &:before {
     content: "";
@@ -16,20 +17,144 @@
   }
 }
 
-.tariffs-slider__list {
-  text-transform: uppercase;
-  line-height: 30px;
+.tariffs-table {
+  width: 630px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-.tariffs-slider__item {
+.tariffs__list {
+  line-height: 30px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  transform: translateX(-30%);
+
+  @media ($tablet-width) {
+    transform: translateX(0%);
+    margin-bottom: 70px;
+  }
+}
+
+.tariffs__item {
+  text-transform: uppercase;
+  border: 1px solid;
+  padding: 25px;
+  background-color: $grey-color;
+  color: $white-color;
+  min-width: 280px;
+
+  @media ($tablet-width) {
+    min-width: 155px;
+  }
+
   h3 {
     font-size: 18px;
     font-family: $opensans-bold;
+    @media ($tablet-width) {
+      font-size: 16px;
+    }
   }
 
   p {
     font-size: 24px;
     font-family: $opensans-light;
+
+    @media ($tablet-width) {
+      font-size: 18px;
+    }
   }
 }
+
+.tariffs__item,
+.tariff-feature__name,
+.tariff-feature__access {
+  border: 2px solid #e5e5e5;
+}
+
+.tariffs__item {
+  position: relative;
+  padding: 25px 0;
+
+  @media ($tablet-width) {
+    padding: 10px 15px;
+  }
+}
+
+.tariff-feature__access {
+  padding: 20px;
+
+  @media ($tablet-width) {
+    padding: 6px 15px;
+  }
+
+  &--enable svg {
+    fill: #3dc644;
+  }
+
+  &--disable svg {
+    fill: #f25b26;
+  }
+}
+
+.tariff-feature__access-container {
+  display: flex;
+  justify-content: space-between;
+
+  @media ($tablet-width) {
+    justify-content: center;
+  }
+
+  span {
+    text-transform: uppercase;
+    @media ($tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.tariff-feature__name {
+  display: none;
+  text-align: left;
+
+  &--invisible {
+    border: none;
+  }
+
+  @media ($tablet-width) {
+    display: table-cell;
+    padding: 0 15px;
+    min-width: 155px;
+  }
+}
+
+.tariff__item-hit {
+  position: absolute;
+  background-image: url(../img/bg-hit.svg);
+  background-size: contain;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+
+  @media ($tablet-width) {
+    background-position: -15px 0;
+    background-size: 80px 70px;
+  }
+
+  &--name {
+    display: block;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 26px;
+    left: 25px;
+
+    @media ($tablet-width) {
+      top: 5px;
+      left: 8px;
+    }
+  }
+}
+
 

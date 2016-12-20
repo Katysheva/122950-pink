@@ -1,5 +1,6 @@
 .feedback-slider {
-  padding-top: 20px;
+  @include container();
+  margin-top: 50px;
 }
 
 .feedback-slider__list {
@@ -7,13 +8,36 @@
 }
 
 .feedback-slider__item {
-  h3 {
+  @media ($tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.feedback-slider__item-name {
     font-family: $opensans-bold;
     font-size: 18px;
+    color: #000;
+    @media ($tablet-width) {
+      font-size: 20px;
+      padding-top: 50px;
   }
 }
 
 .feedback-slider__list .feedback-slider__item:nth-child(n+2) {
   display: none;
+}
+
+.feedback-slider__item-profession {
+  display: none;
+  @media ($tablet-width) {
+    display: block;
+  }
+}
+
+.feedback-slider__item-description {
+  @media ($tablet-width) {
+    order: -1;
+  }
 }
 
