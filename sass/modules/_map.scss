@@ -6,6 +6,14 @@
   position: relative;
   background-size: 100%;
 
+  @media ($tablet-width) {
+    min-height: 380px;
+  }
+
+  @media ($desktop-width) {
+    min-height: 525px;
+  }
+
   &::before {
     position: absolute;
     background-image: url(../img/bg-triangle-white-footer.svg);

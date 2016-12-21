@@ -1,21 +1,40 @@
-footer {
+.footer {
+  display: none;
   @include container();
-  //padding: 40px;
-  @media ($tablet-width) {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 35px 40px 50px;
-    justify-content: space-between;
-}
+  padding: 40px;
+
+  @media ($desktop-width) {
+    max-width: 940px;
+    margin: 0 auto;
+  }
 
   a {
     font: 0/0 serif;
     text-shadow: none;
     color: transparent;
   }
-}
 
+  &--visible {
+    display: flex;
+    flex-direction: column;
+
+    .social-icons {
+      padding: 40px 0;
+    }
+  }
+
+  @media ($tablet-width) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 35px 40px 50px;
+    justify-content: space-between;
+  }
+
+  @media ($desktop-width) {
+    padding: 35px 0 50px;
+  }
+}
 .footer-logo__item {
   background-image: url(../img/logo-pink-blue-mobile.svg);
   height: 40px;
@@ -30,10 +49,9 @@ footer {
 }
 
 .social-icons {
-  padding: 40px 30px;
   display: flex;
   justify-content: space-between;
-  max-width: 240px;
+  max-width: 265px;
   margin: 0 auto;
 }
 

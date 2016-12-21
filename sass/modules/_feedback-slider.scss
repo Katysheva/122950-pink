@@ -38,6 +38,8 @@
 .feedback-slider__item-description {
   @media ($tablet-width) {
     order: -1;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 

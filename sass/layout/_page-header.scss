@@ -6,25 +6,31 @@ header {
   background: url(../img/bg-back-mobile@1x.jpg);
   background-position: 60% 0;
   background-repeat: no-repeat;
-  min-height: 460px;
   position: relative;
   background-size: cover;
+  min-height: 240px;
 
-  &--main-page img {
-    //min-height: 395px;
-    //background: url(../img/iphone-hand-mobile@1x.png), url(../img/bg-back-mobile@1x.jpg);
-    //background-position: 0 100%, 50% 0;
-    //background-size: auto 62%, cover;
-    //background-repeat: no-repeat;
-    //@media ($tablet-width) {
-    //  background-position: 90% 100%, 50% 0;
-    //  background-size: 67% auto, cover;
-    //}
+  @media ($tablet-width) {
+    min-height: 440px;
+  }
 
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
+  @media ($desktop-width) {
+    min-height: 395px;
+  }
+
+  &--main-page {
+    min-height: 460px;
+
+    @media ($tablet-width) {
+      min-height: 850px;
+    }
+
+    img {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+    }
   }
 }
 
@@ -37,16 +43,16 @@ header {
     line-height: 35px;
     color: $white-color;
     font-weight: 300;
+    width: 170px;
+    margin: 0 auto;
+
     @media ($tablet-width) {
       line-height: 50px;
       font-size: 50px;
-      padding: 0 0 65px;
+      padding: 0 120px 65px;
+      width: 595px;
     }
   }
 }
 
-@media ($tablet-width) {
-  .page-header {
-    min-height: 850px;
-  }
-}
+
