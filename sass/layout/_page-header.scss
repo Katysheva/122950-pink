@@ -8,7 +8,7 @@ header {
   background-repeat: no-repeat;
   position: relative;
   background-size: cover;
-  min-height: 240px;
+  min-height: 235px;
 
   @media ($tablet-width) {
     min-height: 440px;
@@ -35,15 +35,15 @@ header {
 }
 
 .page-header__title {
-  padding-top: 35px;
+  padding-top: 27px;
 
   h1 {
     font-family: $opensans-light;
     font-size: 24px;
-    line-height: 35px;
+    line-height: 30px;
     color: $white-color;
     font-weight: 300;
-    width: 170px;
+    max-width: 240px;
     margin: 0 auto;
 
     @media ($tablet-width) {
