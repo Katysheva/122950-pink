@@ -6,51 +6,29 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <section class="page-header page-header--main-page">
-      <div class="page-header-menu">
-        <a href="#" class="logo">pink</a>
-        <button title="show menu" type="button" class="page-header-menu__toggle">
-        </button>
+<header>
+  <div class="page-header-menu">
+    <div class="page-header-menu__title page-header-menu__title--opened-menu">
+      <a href="#" class="logo">pink</a>
+      <button title="show menu" type="button" class="page-header-menu__toggle"></button>
+    </div>
+    <nav class="page-header-menu__navigation">
+      <ul class="page-header-menu__navigation-list">
+        <li><a href="#">главная</a></li>
+        <li><a href="#">фотография</a></li>
+        <li><a href="#">конкурс</a></li>
+        <li><a href="#">html-academy</a></li>
+      </ul>
+    </nav>
+  </div>
 
+  <section class="page-header">
 
-        <nav class="page-header-menu__navigation">
-          <ul class="page-header-menu__navigation-list">
-            <li><a href="#">главная</a></li>
-            <li><a href="#">фотография</a></li>
-            <li><a href="#">конкурс</a></li>
-            <li><a href="#">html-academy</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="page-header__content">
-
-        <section class="download">
-          <div class="page-header__title">
-            <h1>Взгляните на жизнь иначе!</h1>
-          </div>
-          <a class="rounded-button rounded-button--white" href="#">Скачать приложение</a>
-
-          <ul class="download__list">
-            <li class="download__list-item"><a class="ios-icon" href="#"></a></li>
-            <li class="download__list-item"><a class="android-icon" href="#"></a></li>
-            <li class="download__list-item"><a class="win-icon" href="#"></a></li>
-          </ul>
-
-          <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        </section>
-
-        <div class="page-header__hand-img">
-          <picture>
-            <!-- <source media="(min-width: 1150px)" srcset="img/iphone-hand-desktop@1x.jpg 1x, img/iphone-hand-desktop@2x.jpg 2x" />
-            <source media="(min-width: 700px)" srcset="img/iphone-hand-tablet@1x.jpg 1x, img/iphone-hand-tablet@2x.jpg 2x" /> -->
-            <img src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.jpg 2x" alt="Hand">
-          </picture>
-        </div>
-      </div>
-    </section>
-  </header>
+    <div class="page-header__title">
+      <h1>Фотографии пользователей</h1>
+    </div>
+  </section>
+</header>
 
   <main>
     <div class="page-introduction">

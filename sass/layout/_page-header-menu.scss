@@ -1,13 +1,26 @@
 .page-header-menu {
-  display: flex;
+  ~ nav {
+    display: block;
+  }
+}
+
+.page-header-menu__title {
   margin-bottom: -75px;
   position: relative;
   z-index: 5;
-}
-
-.page-header-menu > a {
+  //background-color: rgb(40, 54, 69);
+  color: #000;
   background-color: rgba(28, 37, 48, 0.5);
-  color: $white-color;
+
+  &--opened-menu {
+    margin-bottom: 0;
+    background-color: $grey-color;
+    border-bottom: 1px solid #000;
+
+    ~ nav {
+      display: block;
+    }
+  }
 }
 
 .logo {
@@ -16,15 +29,16 @@
   color: $white-color;
   padding: 20px;
   display: block;
-  border-bottom: 1px solid #000;
+  //border-bottom: 1px solid #000;
   opacity: 12;
+  text-align: left;
 }
 
 .page-header-menu__navigation-list {
   li {
     background-color: $grey-color;
     border-top: 1px solid #485461;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #000;
     padding: 20px;
 
     a {
@@ -33,10 +47,6 @@
       color: $white-color;
       display: block;
     }
-  }
-
-  li:last-child {
-    border-bottom: 1px solid;
   }
 
   li:hover {
