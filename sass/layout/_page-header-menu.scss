@@ -1,5 +1,8 @@
 .page-header-menu {
   display: flex;
+  margin-bottom: -75px;
+  position: relative;
+  z-index: 5;
 }
 
 .page-header-menu > a {

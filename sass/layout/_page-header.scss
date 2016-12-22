@@ -8,7 +8,9 @@ header {
   background-repeat: no-repeat;
   position: relative;
   background-size: cover;
-  min-height: 235px;
+  //min-height: 235px;
+  // min-height: 240px;
+  padding: 105px 0 80px;
 
   @media ($tablet-width) {
     min-height: 440px;
@@ -24,18 +26,12 @@ header {
     @media ($tablet-width) {
       min-height: 850px;
     }
-
-    img {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      display: block;
-    }
   }
 }
 
 .page-header__title {
   padding-top: 27px;
+  // padding-top: 35px;
 
   h1 {
     font-family: $opensans-light;
@@ -56,3 +52,36 @@ header {
 }
 
 
+.page-header__content {
+  display: flex;
+  flex-direction: column;
+
+  .download {
+    order: 1;
+    margin: 0;
+  }
+
+}
+
+.page-header__hand-img {
+  width: 100%;
+  padding-top: 110px;
+  padding-right: 60px;
+  img {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media ($tablet-width) {
+  .page-header__content {
+    flex-direction: row;
+    padding-top: 90px;
+
+    .download {
+      order: 0;
+      margin: 0;
+    }
+  }
+}

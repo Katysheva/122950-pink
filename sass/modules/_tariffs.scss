@@ -27,7 +27,7 @@
   line-height: 30px;
   margin: 0 auto;
   border-collapse: collapse;
-  transform: translateX(-30%);
+  transform: translateX(-31%);
 
   @media ($tablet-width) {
     transform: translateX(0%);
@@ -38,13 +38,15 @@
 .tariffs__item {
   text-transform: uppercase;
   border: 1px solid;
-  padding: 25px;
   background-color: $grey-color;
   color: $white-color;
   min-width: 280px;
+  position: relative;
+  padding: 20px 0;
 
   @media ($tablet-width) {
     min-width: 155px;
+    padding: 10px 15px;
   }
 
   h3 {
@@ -71,17 +73,9 @@
   border: 2px solid #e5e5e5;
 }
 
-.tariffs__item {
-  position: relative;
-  padding: 25px 0;
-
-  @media ($tablet-width) {
-    padding: 10px 15px;
-  }
-}
 
 .tariff-feature__access {
-  padding: 20px;
+  padding: 14px 20px;
 
   @media ($tablet-width) {
     padding: 6px 15px;
@@ -160,4 +154,3 @@
 .tariff-feature {
   background-color: $white-color;
 }
-
