@@ -1,8 +1,9 @@
 .slider-bullet-buttons {
-  padding: 40px;
+  padding: 30px;
 
   li {
     display: inline-block;
+    margin: 0 5px;
   }
 
   svg {
@@ -10,6 +11,7 @@
   }
 
   &--tariffs {
+    padding: 40px;
     @media ($tablet-width) {
       display: none;
     }
