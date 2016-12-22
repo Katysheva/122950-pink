@@ -1,16 +1,5 @@
-.page-header {
-  background: url(../img/bg-back-mobile@1x.jpg);
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-  min-height: 240px;
-  position: relative;
-
-  &--main-page {
-    min-height: 395px;
-    background: url(../img/iphone-hand-mobile@1x.png), url(../img/bg-back-mobile@1x.jpg);
-    background-position: 0 100%, 0 0;
-    background-repeat: no-repeat;
-  }
+.page-header-menu {
+  display: flex;
 }
 
 .page-header-menu > a {

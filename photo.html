@@ -22,7 +22,7 @@
       </nav>
     </div>
 
-    <div class="container page-header__title">
+    <div class="page-header__title">
       <h1>Фотографии пользователей</h1>
     </div>
   </section>
@@ -30,7 +30,7 @@
 
 </header>
 <main>
-  <div class="container page-introduction">
+  <div class="page-introduction">
     <h2 class="page-introduction__content">Взгляните на фотографии, которые выкладывают пользователи!
       Видите, как не хватает ваших?</h2>
   </div>
@@ -42,23 +42,24 @@
       <img src="img/panorama-mobile@1x.jpg" alt="">
     </div>
 
-    <div class="container">
-      <article class="post-card">
 
-        <div class="post-card__post">
-          <p class="post-card__title">Анна <span>(5 минут назад)</span></p>
-          <p class="post-card__content">
-            Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую
-            трансляцию в перископе, задавайте свои вопросы!</p>
-          <p class="post-card__like">
-            <a href="#">нравится:
-              <span class="post-card__like-amount">215</span>
-            </a>
-          </p>
-        </div>
-      </article>
-      <!--2-->
+    <article class="post-card post-card--top">
 
+      <div class="post-card__post">
+        <p class="post-card__title">Анна <span>(5 минут назад)</span></p>
+        <p class="post-card__content">
+          Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую
+          трансляцию в перископе, задавайте свои вопросы!</p>
+        <p class="post-card__like">
+          <a href="#">нравится:
+            <span class="post-card__like-amount">215</span>
+          </a>
+        </p>
+      </div>
+    </article>
+
+    <!--2-->
+    <div class="post-card__wrapper">
       <article class="post-card">
         <img src="img/photo-1-mobile@1x.jpg" alt="">
         <div class="post-card__post">
@@ -145,58 +146,79 @@
   </section>
 
   <section class="photo-posting">
-    <h2 class="container photo-posting__title">Затмите их всех!<br>
+    <h2 class="photo-posting__title">Затмите их всех!<br>
       Выкладывайте все, что накопилось в телефоне!</h2>
 
-    <div class="container photo-posting__settings">
-      <img src="img/photo-7-mobile@1x.jpg" alt="">
+    <div class="photo-posting__settings">
 
-      <form action="#">
-        <div class="photo-posting__tools">
-          <ul class="photo-posting__filters">
-            <li>
-              <input id="crop" type="radio"><label class="photo-posting__filter photo-posting__filter--crop" for="crop"></label>
-            </li>
-            <li>
-              <input id="color" type="radio"><label class="photo-posting__filter photo-posting__filter--color" for="color"></label>
-            </li>
-            <li>
-              <input id="brightness" type="radio"><label class="photo-posting__filter photo-posting__filter--brightness" for="brightness"></label>
-            </li>
-          </ul>
-          <div class="photo-posting__slider">
-            <input id="slider" type="range"><label for="slider"></label>
+      <div class="photo-posting__settings-wrapper">
+        <div class="photo-posting__settings-photo">
+          <img src="img/photo-7-mobile@1x.jpg" alt="">
+        </div>
+
+        <div class="photo-posting__tools-wrapper">
+          <form action="#">
+            <div class="photo-posting__tools">
+              <ul class="photo-posting__filters">
+                <li>
+                  <input id="crop" type="radio"><label class="photo-posting__filter photo-posting__filter--crop"
+                                                       for="crop"></label>
+                  <div class="photo-posting__slider">
+                    <input id="crop-slider" type="range"><label for="crop-slider"></label>
+                  </div>
+                </li>
+                <li>
+                  <input id="color" type="radio"><label class="photo-posting__filter photo-posting__filter--color"
+                                                        for="color"></label>
+                  <div class="photo-posting__slider">
+                    <input id="color-slider" type="range"><label for="color-slider"></label>
+                  </div>
+                </li>
+                <li>
+                  <input id="brightness" type="radio"><label
+                  class="photo-posting__filter photo-posting__filter--brightness" for="brightness"></label>
+                  <div class="photo-posting__slider">
+                    <input id="brightness-slider" type="range"><label for="brightness-slider"></label>
+                  </div>
+                </li>
+
+              </ul>
+
+              <div class="photo-posting__slider photo-posting__slider--mobile">
+                <input id="slider" type="range"><label for="slider"></label>
+              </div>
+            </div>
+          </form>
+
+          <div class="photo-posting__buttons">
+            <button class="rounded-button rounded-button--pink" type="submit">Запостить</button>
+            <button class="rounded-button rounded-button--grey" type="reset">Отмена</button>
           </div>
         </div>
-      </form>
-
-      <div class="photo-posting__buttons">
-        <button class="rounded-button rounded-button--pink" type="submit">Запостить</button>
-        <button class="rounded-button rounded-button--grey" type="reset">Отмена</button>
       </div>
     </div>
   </section>
 </main>
 
-<footer>
-  <div class="footer-logo">
-    <a href="index.html" class="footer-logo__item">pink</a>
-  </div>
-  <ul class="social-icons">
-    <li>
-      <a href="#" class="social-icons__item social-icons__item--twitter">Twitter</a>
-    </li>
-    <li>
-      <a href="#" class="social-icons__item social-icons__item--facebook">Facebook</a>
-    </li>
-    <li>
-      <a href="#" class="social-icons__item social-icons__item--youtube">Youtube</a>
-    </li>
-  </ul>
-  <div class="footer-copyright">
-    <span>Разработано</span>
-    <a href="https://htmlacademy.ru/" class="html-academy-icon"></a>
-  </div>
-</footer>
+  <footer class="footer">
+    <div class="footer-logo">
+      <a href="index.html" class="footer-logo__item">pink</a>
+    </div>
+    <ul class="social-icons">
+      <li>
+        <a href="#" class="social-icons__item social-icons__item--twitter">Twitter</a>
+      </li>
+      <li>
+        <a href="#" class="social-icons__item social-icons__item--facebook">Facebook</a>
+      </li>
+      <li>
+        <a href="#" class="social-icons__item social-icons__item--youtube">Youtube</a>
+      </li>
+    </ul>
+    <div class="footer-copyright">
+      <span>Разработано</span>
+      <a href="https://htmlacademy.ru/" class="html-academy-icon"></a>
+    </div>
+  </footer>
 </body>
 </html>

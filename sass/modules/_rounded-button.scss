@@ -8,7 +8,7 @@
   display: block;
   background-color: transparent;
   cursor: pointer;
-  width: 282px;
+  max-width: 282px;
   outline: none;
 
   &--white {
@@ -26,6 +26,16 @@
   }
 }
 
-.photo-posting__buttons button {
-  margin-top: 12px;
+.photo-posting__buttons {
+  //@include container();
+  @media ($desktop-width) {
+    display: flex;
+  }
+
+  button {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 12px;
+    position: relative;
+  }
 }
