@@ -1,6 +1,6 @@
 .contacts {
   font-size: 24px;
-  padding: 50px 0 0;
+  padding: 43px 0 0;
   @media ($tablet-width) {
     padding: 55px 0 0;
   }
@@ -9,7 +9,7 @@
 .contacts__title h2 {
   font-family: $opensans-light;
   font-size: 24px;
-  line-height: 40px;
+  line-height: 30px;
   @media ($tablet-width) {
     font-size: 40px;
   }
@@ -30,7 +30,8 @@
 }
 
 .contacts__list-item {
-  padding: 5px;
+  padding: 5px 5px 10px;
+  line-height: 25px;
 
   @media ($tablet-width) {
     flex-basis: 50%;
@@ -40,7 +41,7 @@
   h3 {
     font-family: $opensans-bold;
     font-size: 18px;
-    margin: 28px 0 10px;
+    margin: 10px 0 5px;
   }
 
   &:last-child {
