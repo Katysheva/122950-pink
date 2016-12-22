@@ -15,13 +15,13 @@
 }
 
 .feedback-slider__item-name {
-    font-family: $opensans-bold;
-    font-size: 18px;
-    color: #000;
-    margin-bottom: 10px;
-    @media ($tablet-width) {
-      font-size: 20px;
-      padding-top: 50px;
+  font-family: $opensans-bold;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 10px;
+  @media ($tablet-width) {
+    font-size: 20px;
+    padding-top: 50px;
   }
 }
 
@@ -43,4 +43,3 @@
     line-height: 30px;
   }
 }
-
