@@ -11,32 +11,48 @@ header {
   background-repeat: no-repeat;
   position: relative;
   background-size: cover;
-  padding: 80px 0;
+  padding: 30px 0;
+  min-height: 170px;
 
   @media ($tablet-width) {
-    // min-height: 440px;
+    min-height: 330px;
+    padding: 80px 0 0;
   }
 
   @media ($desktop-width) {
-    // min-height: 395px;
+    min-height: 285px;
+    padding: 40px 0 0;
   }
 
   &--main-page {
     min-height: 460px;
-
+    padding: 0;
+    .page-header__title {
+      h1 {
+        padding: 0;
+      }
+    }
     @media ($tablet-width) {
       min-height: 619px;
+    }
+  }
+  &--form-page {
+    .page-header__title {
+      h1 {
+        padding: 0 10%;
+      }
     }
   }
 }
 
 .page-header__title {
+  padding: 0 20px;
   @media ($tablet-width) {
-    padding: 0 23px 28px 30px;
+    padding: 0 50px 28px 50px;
   }
 
   @media ($desktop-width) {
-    padding: 30px 25px 55px 40px;
+    padding: 30px 25px 55px;
   }
   //padding-top: 27px;
 
@@ -51,14 +67,12 @@ header {
     @media ($tablet-width) {
       line-height: 50px;
       font-size: 50px;
+      padding: 0 10%;
     }
-  }
-  @media ($tablet-width) {
-    padding: 70px 120px;
-  }
-  @media ($desktop-width) {
-    padding: 100px 120px 35px;
 
+    @media ($desktop-width) {
+      padding: 0 30%;
+    }
   }
 }
 
@@ -119,5 +133,6 @@ header {
     }
   }
 }
+
 
 

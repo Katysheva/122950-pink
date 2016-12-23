@@ -43,6 +43,7 @@
     position: relative;
     @media ($desktop-width) {
       max-width: 200px;
+      min-width: 200px;
       margin: 0;
     }
   }
