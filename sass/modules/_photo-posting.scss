@@ -10,15 +10,20 @@
 
 .photo-posting__settings-photo {
   @media ($tablet-width) {
-    width: 300px;
+    width: 50%;
   }
   img {
-    //@include container();
-    @media ($tablet-width) {
-      width: 100%;
-    }
     padding-right: 5px;
     height: 100%;
+    @media ($tablet-width) {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    @media ($desktop-width) {
+      margin: 0 auto;
+      max-width: 300px;
+    }
   }
 }
 
@@ -37,6 +42,10 @@
   font-size: 14px;
   font-weight: 100;
   padding: 50px 0;
+  @media ($tablet-width) {
+    font-size: 18px;
+    padding: 65px 0;
+  }
 }
 
 .photo-posting__tools-wrapper {
@@ -44,15 +53,19 @@
   flex-direction: column;
   justify-content: space-between;
 
-  //form {
-  //  @include container();
-  //}
+  form {
+    padding-bottom: 15px;
+  }
+  @media ($tablet-width) {
+    width: 50%;
+  }
 }
 
 .photo-posting__filters {
   display: flex;
-  justify-content: space-between;
-  padding: 40px;
+  justify-content: center;
+  padding: 35px;
+  padding-bottom: 20px;
   flex-basis: 50%;
 
   input {
@@ -61,17 +74,26 @@
       display: block;
     }
   }
-
+  li {
+    padding: 0 15px;
+  }
   @media ($tablet-width) {
     flex-direction: column;
-    padding: 10px 0;
+    padding: 0 0 0 35px;
 
     li {
       display: flex;
       align-items: center;
-      padding: 25px 0;
+      padding: 20px 0 10px;
       border-bottom: 2px solid #dddfe0;
+      &:first-of-type {
+        padding: 0 0 15px;
+
+      }
     }
+  }
+  @media ($desktop-width) {
+    padding: 0;
   }
 }
 
@@ -85,8 +107,13 @@
 
   @media ($tablet-width) {
     background-size: 23px;
+    width: 40px;
+    height: 40px;
   }
+  @media ($desktop-width) {
+    background-size: 35px;
 
+  }
   &--crop {
     background-image: url("../img/icon-editor-crop.svg");
   }
@@ -191,6 +218,10 @@
     border-radius: 50px;
     cursor: pointer;
   }
+  @media ($tablet-width) {
+    width: 100%;
+    padding: 0 5px;
+  }
 }
 
 .photo-posting__filters .photo-posting__slider {
@@ -199,6 +230,10 @@
   @media ($tablet-width) {
     display: block;
     padding: 0 10px;
+    width: 100%;
+  }
+  @media ($desktop-width) {
+    padding: 0 50px;
   }
 }
 
@@ -213,5 +248,16 @@
     @media ($tablet-width) {
       display: none;
     }
+  }
+}
+
+.photo-posting__buttons {
+  padding-top: 30px;
+  @media ($tablet-width) {
+    padding: 0 5px 0 40px;
+  }
+  @media ($desktop-width) {
+    justify-content: space-between;
+    padding: 0;
   }
 }

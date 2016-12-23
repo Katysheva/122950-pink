@@ -20,14 +20,15 @@
 }
 
 @media ($tablet-width) {
-  margin: 0;
-  font-size: 18px;
+  //margin: 0;
+  //font-size: 18px;
+  padding: 95px 50px 80px;
 }
 
 .page-introduction__content {
   line-height: 30px;
   font-weight: 100;
-  padding: 40px 0 25px;
+  padding: 40px 0 47px;
   font-size: 24px;
 
   &--invisible {
@@ -43,32 +44,34 @@
 
     //@media ($tablet-width) {
     //  display: inline-block;
-    //  font-size: 39px;
-    //
     //}
   }
-&--main-page {
-  font-size: 24px;
-  font-family: $opensans-light;
 
   @media ($tablet-width) {
-    font-size: 39px;
-    line-height: 40px;
-    padding: 0 0 10px;
+    padding: 0;
+    font-size: 18px;
   }
 
-  @media ($desktop-width) {
-    font-size: 50px;
-    padding: 20px 0 10px;
-    line-height: 53px;
-  }
+  &--main-page {
+    font-size: 24px;
+    font-family: $opensans-light;
 
-  &:nth-child(2) {
     @media ($tablet-width) {
-      padding: 0 100px;
+      font-size: 39px;
+      line-height: 40px;
+      padding: 0 0 10px;
     }
 
-  }
-}
+    @media ($desktop-width) {
+      font-size: 50px;
+      padding: 20px 0 10px;
+      line-height: 53px;
+    }
 
+    &:nth-child(2) {
+      @media ($tablet-width) {
+        padding: 0 100px;
+      }
+    }
+  }
 }

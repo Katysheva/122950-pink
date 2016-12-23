@@ -1,10 +1,18 @@
 .mark {
   position: absolute;
   background-color: $pink-color;
-  padding: 13px 20px;
+  padding: 6px 20px;
   color: $white-color;
   text-transform: uppercase;
   font-family: $opensans-bold;
   font-size: 12px;
-  right: 20px;
+  right: 25px;
+  z-index: 999;
+  @media ($tablet-width) {
+    right: 35px;
+    top: 55px;
+  }
+  @media ($desktop-width) {
+    right: 130px;
+  }
 }

@@ -35,10 +35,14 @@
     @media ($desktop-width) {
       border: 0;
     }
+    //padding: 22px 20px;
 
     ~ nav {
       display: block;
     }
+//    @media ($tablet-width) {
+//padding: 42px 35px;
+//    }
   }
 }
 
