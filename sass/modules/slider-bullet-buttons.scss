@@ -17,4 +17,12 @@
     }
 
   }
+
+  @media ($tablet-width) {
+    padding-bottom: 25px;
+  }
+
+  @media ($desktop-width) {
+    display: none;
+  }
 }

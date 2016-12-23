@@ -1,5 +1,8 @@
 header {
   position: relative;
+  @media ($tablet-width) {
+    background: $grey-color;
+  }
 }
 
 .page-header {
@@ -10,7 +13,8 @@ header {
   background-size: cover;
   //min-height: 235px;
   // min-height: 240px;
-  padding: 105px 0 80px;
+
+  //padding: 105px 0 80px;
 
   @media ($tablet-width) {
     min-height: 440px;
@@ -24,14 +28,19 @@ header {
     min-height: 460px;
 
     @media ($tablet-width) {
-      min-height: 850px;
+      min-height: 619px;
     }
   }
 }
 
 .page-header__title {
-  padding-top: 27px;
-  // padding-top: 35px;
+  @media ($tablet-width) {
+    padding: 0 23px 28px 30px;
+  }
+
+  @media ($desktop-width) {
+    padding: 30px 25px 55px 40px;
+  }
 
   h1 {
     font-family: $opensans-light;
@@ -45,43 +54,82 @@ header {
     @media ($tablet-width) {
       line-height: 50px;
       font-size: 50px;
-      padding: 0 120px 65px;
+      //padding: 0 120px 65px;
       width: 595px;
     }
   }
 }
 
+//
+//@media ($tablet-width) {
+//  .page-header__content {
+//    flex-direction: row;
+//    padding-top: 90px;
+//
+//    .download {
+//      order: 0;
+//      margin: 0;
+//      width: 55%;
+//    }
+//  }
+//}
 
 .page-header__content {
   display: flex;
   flex-direction: column;
 
+  @media ($tablet-width) {
+    flex-direction: row;
+    padding-top: 90px;
+  }
+
+  @media ($desktop-width) {
+    //padding-top: 62px;
+    padding-bottom: 120px;
+  }
   .download {
     order: 1;
     margin: 0;
-  }
 
+    @media ($tablet-width) {
+      order: 0;
+      margin: 0;
+      width: 55%;
+    }
+
+    //@media ($desktop-width) {
+    //  width: 100%;
+    //  padding: 0 20px 30px 60px;
+    //}
+  }
 }
 
 .page-header__hand-img {
   width: 100%;
-  padding-top: 110px;
+  padding-top: 107px;
   padding-right: 60px;
+
   img {
     display: block;
     height: auto;
     width: 100%;
-  }
-}
 
-@media ($tablet-width) {
-  .page-header__content {
-    flex-direction: row;
-    padding-top: 90px;
+    @media ($tablet-width) {
+      position: absolute;
+      max-width: 71%;
+      right: 15px;
+      min-height: 547px;
+      width: auto;
+      bottom: 0;
+      z-index: 0;
+      display: block;
+    }
 
-    .download {
-      order: 0;
-      margin: 0;
+    @media ($desktop-width) {
+      left: 40%;
+      min-height: 645px;
     }
   }
 }
+
+

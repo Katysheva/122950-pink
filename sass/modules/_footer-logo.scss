@@ -1,12 +1,8 @@
 .footer {
   display: none;
   @include container();
-  padding: 55px 40px;
 
-  @media ($desktop-width) {
-    max-width: 940px;
-    margin: 0 auto;
-  }
+  padding: 55px 40px;
 
   a {
     font: 0/0 serif;
@@ -27,14 +23,17 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 35px 40px 50px;
+    padding: 30px 40px;
     justify-content: space-between;
   }
 
   @media ($desktop-width) {
-    padding: 35px 0 50px;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 75px 0;
   }
 }
+
 .footer-logo__item {
   background-image: url(../img/logo-pink-blue-mobile.svg);
   height: 40px;

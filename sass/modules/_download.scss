@@ -4,9 +4,6 @@
   color: $white-color;
   padding-top: 28px;
   padding-bottom: 28px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
   h1 {
     display: none;
@@ -14,25 +11,34 @@
       display: block;
       font-size: 42px;
     }
+
+    @media ($desktop-width) {
+      font-size: 50px;
+      line-height: 55px;
+    }
   }
 
   @media ($tablet-width) {
-    // position: absolute;
     background-color: transparent;
-    // top: 50%;
-    // transform: translateY(-50%);
-    padding: 0 20px;
-    width: 50%;
+    position: relative;
+    z-index: 1;
   }
 }
 
 .download__list {
   display: flex;
   justify-content: space-between;
-  padding: 30px 40px 20px;
+  padding: 34px 40px 20px;
   align-self: stretch;
+
   @media ($tablet-width) {
-    padding: 46px;
+    padding: 47px 47px  35px;
+    max-width: 300px;
+  }
+
+  @media ($desktop-width) {
+    margin: 0 auto;
+    padding: 68px 41px 55px 55px;
   }
 }
 
