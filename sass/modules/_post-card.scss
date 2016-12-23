@@ -1,3 +1,63 @@
+.post-card {
+  margin-top: 20px;
+  text-align: left;
+
+  @media ($tablet-width) {
+    flex-basis: 48%;
+  }
+
+  @media ($desktop-width) {
+    flex-basis: 32%;
+    margin-top: 50px;
+    &:nth-of-type(-n+3) {
+      margin-top: 20px;
+    }
+  }
+  img {
+    @media ($tablet-width) {
+      min-height: 300px;
+    }
+    @media ($desktop-width) {
+      min-height: 400px;
+    }
+  }
+  &--top {
+    @include container();
+
+    .post-card__post {
+      @media ($tablet-width) {
+        min-height: 125px;
+      }
+      @media ($desktop-width) {
+        min-height: 100px;
+      }
+    }
+    .post-card__like {
+      a {
+        padding-left: 32px;
+        &:before {
+          @media ($desktop-width) {
+            left: 0;
+            bottom: 5px;
+          }
+        }
+      }
+      @media ($tablet-width) {
+        position: absolute;
+        right: 17px;
+        top: 17px;
+      }
+    }
+
+
+    @media ($desktop-width) {
+      &:nth-of-type(1) {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
 .post-card__title {
   font-family: $opensans-bold;
 
@@ -9,14 +69,19 @@
 }
 
 .post-card__like {
-  padding-top: 20px;
+  padding-top: 10px;
+  position: relative;
+  font-size: 12px;
 
   a {
     text-transform: uppercase;
     color: $pink-color;
     position: relative;
-    padding-left: 20px;
-
+    padding-left: 32px;
+    @media ($desktop-width) {
+      display: block;
+      padding-left: 0;
+    }
     &::before {
       content: '';
       background-image: url(../img/icon-heart.svg);
@@ -25,37 +90,33 @@
       width: 13px;
       background-repeat: no-repeat;
       left: 0;
-      bottom: 3px;
+      bottom: 2px;
+
+      @media ($desktop-width) {
+        left: calc(100% - 15px);
+      }
     }
   }
+
+  // @media ($tablet-width) {
+  //   position: absolute;
+  //   right: 17px;
+  //   top: 17px;
+  // }
 }
 
-.post-card {
-  margin-top: 20px;
-  text-align: left;
-
-  @media ($tablet-width) {
-    flex-basis: 48%;
-  }
-
-  @media ($desktop-width) {
-    flex-basis: 30%;
-  }
-
-  &--top {
-    @include container();
-  }
-}
 
 .post-card__post {
-  padding: 25px 17px;
+  padding: 17px;
   background-color: $light-grey-color;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   @media ($tablet-width) {
-    min-height: 190px;
+    min-height: 155px;
+    padding: 25px;
+    position: relative;
   }
 }
 
@@ -67,6 +128,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 30px;
   }
 }
 
@@ -74,13 +136,24 @@
 
   &--top {
     position: relative;
+    @media ($tablet-width) {
+      min-height: 505px;
+      overflow: hidden;
+    }
   }
 
   &--top img {
     width: 100%;
 
+    @media ($tablet-width) {
+      height: 505px;
+      width: auto;
+      transform: translateX(-20%);
+    }
     @media ($desktop-width) {
       max-height: 510px;
+      transform: none;
+      width: 100%;
     }
   }
 }

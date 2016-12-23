@@ -71,7 +71,7 @@
   }
 
   li {
-    margin-bottom: 25px;
+    margin-bottom: 17px;
     @media ($tablet-width) {
       display: flex;
     }
@@ -93,7 +93,8 @@
   text-transform: uppercase;
   color: $pink-color;
   font-weight: 100;
-  padding: 40px 0;
+  padding: 35px 20px 40px;
+  line-height: 20px;
 
   &--position {
     @media ($tablet-width) {
@@ -118,8 +119,10 @@
 .form__achievements-item {
   li {
     padding-left: 70px;
-    padding-bottom: 40px;
+    padding-bottom: 52px;
     position: relative;
+    font-size: 18px;
+
     &:last-of-type {
       @media ($tablet-width) {
         padding-bottom: 0;
@@ -156,7 +159,7 @@
   height: 35px;
   border: 2px solid #e5e5e5;
   position: absolute;
-  left: 20px;
+  left: 0;
 }
 
 .form__achievements-item input[type=checkbox]:checked + label::before {
@@ -165,7 +168,7 @@
   width: 35px;
   height: 35px;
   position: absolute;
-  left: 20px;
+  left: 0;
   background-repeat: no-repeat;
   background-position: 7px 8px;
 }
@@ -175,7 +178,7 @@
   padding-bottom: 40px;
 
   li {
-    padding-top: 30px;
+    padding-top: 18px;
 
     &:nth-of-type(1) {
       @media ($tablet-width) {
@@ -205,10 +208,12 @@
   label {
     text-transform: uppercase;
     color: $pink-color;
+    padding-left: 22px;
   }
 
   input {
-    margin-top: 10px;
+
+    //margin-top: 10px;
   }
 
   @media ($desktop-width) {
@@ -225,10 +230,10 @@
 }
 
 .form__apps-item {
-  padding-bottom: 40px;
+  padding-bottom: 45px;
 
   li {
-    padding-bottom: 60px;
+    padding-bottom: 43px;
     position: relative;
   }
 
@@ -243,6 +248,7 @@
   label {
     padding-left: 70px;
     position: relative;
+    font-size: 18px;
   }
 
   input[type="radio"] {
@@ -271,7 +277,7 @@
 }
 
 .form__emotions-item {
-  margin: 40px 0;
+  margin: 30px 0;
 
   @media ($desktop-width) {
     margin: 0;
@@ -296,8 +302,9 @@
     width: 100%;
     min-height: 200px;
     resize: none;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 18px;
+    margin-top: 10px;
+    line-height: 28px;
 
     @media ($tablet-width) {
       margin-top: 0;
@@ -306,7 +313,8 @@
 }
 
 .form__comment {
-  padding-top: 45px;
+  padding-top: 37px;
+  text-transform: uppercase;
 
   span {
     color: $pink-color;
@@ -333,54 +341,70 @@
   }
 }
 
-@media ($tablet-width) {
+//@media ($tablet-width) {
 
   .wrapper-form-order {
     @media ($desktop-width) {
-      margin-bottom: 65px;
+      margin-bottom: 25px;
     }
     &--initials {
-      order: 1;
+      padding-bottom: 25px;
+
+      @media ($tablet-width) {
+        order: 1;
+      }
       @media ($desktop-width) {
         flex-basis: 45%;
       }
     }
 
     &--achievements {
-      order: 4;
+      @media ($tablet-width) {
+        order: 4;
+      }
       @media ($desktop-width) {
         flex-basis: 100%;
       }
     }
 
     &--contacts {
-      order: 3;
       @media ($tablet-width) {
+        order: 3;
+
         .form__tabl-padding {
           padding-bottom: 35px;
         }
       }
+
       @media ($desktop-width) {
         flex-basis: 100%;
       }
     }
 
     &--apps {
-      order: 2;
+      @media ($tablet-width) {
+        order: 2;
+      }
       @media ($desktop-width) {
         flex-basis: 45%;
       }
     }
 
     &--emotions {
-      order: 5;
+      margin-bottom: 10px;
+
+      @media ($tablet-width) {
+        order: 5;
+      }
       @media ($desktop-width) {
         flex-basis: 100%;
       }
     }
 
     &--buttons {
-      order: 6;
+      @media ($tablet-width) {
+        order: 6;
+      }
       @media ($desktop-width) {
         flex-basis: 100%;
       }
@@ -392,4 +416,4 @@
       margin-bottom: 0;
     }
   }
-}
+//}
