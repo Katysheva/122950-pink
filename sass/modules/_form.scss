@@ -19,8 +19,9 @@
   input,
   textarea {
     font-size: 18px;
-    padding: 19px 15px;
+    padding: 18px 15px;
     width: 100%;
+    margin-top: 5px;
     outline: none;
     border: 2px solid $light-grey-color;
     border-radius: 1px;
@@ -45,6 +46,10 @@
 
     &:active {
       border-color: $pink-color;
+    }
+
+    @media ($tablet-width) {
+      margin-top: 0;
     }
   }
 
@@ -91,6 +96,7 @@
     @media ($tablet-width) {
       display: flex;
       margin-bottom: 50px;
+      align-items: center;
     }
 
     @media ($desktop-width) {
@@ -257,7 +263,9 @@
 
     //margin-top: 10px;
   }
-
+  @media ($tablet-width) {
+    padding-bottom: 0;
+  }
   @media ($desktop-width) {
     display: flex;
     justify-content: space-between;
@@ -266,6 +274,7 @@
 
 .form__container--bg {
   background-color: $light-grey-color;
+
   @media ($tablet-width) {
     background-color: $white-color;
   }
@@ -277,10 +286,10 @@
   li {
     padding-bottom: 43px;
     position: relative;
-  }
 
-  li:last-child {
-    padding-bottom: 0;
+    &:last-child {
+      padding-bottom: 0;
+    }
   }
 
   input {
@@ -329,6 +338,10 @@
     position: absolute;
     background-repeat: no-repeat;
     background-position: 50%;
+  }
+
+  @media ($tablet-width) {
+    padding-bottom: 0;
   }
 }
 

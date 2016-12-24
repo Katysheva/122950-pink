@@ -29,9 +29,12 @@
   @media ($desktop-width) {
     max-width: 940px;
     margin: 0 auto;
-    padding: 75px 0;
+    padding: 95px 0;
     &--form-page {
       padding: 35px 0;
+    }
+    &--main-page {
+      padding: 75px 0;
     }
   }
 }

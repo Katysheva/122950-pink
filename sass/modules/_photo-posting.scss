@@ -6,6 +6,10 @@
     display: flex;
     justify-content: space-between;
   }
+
+  @media ($desktop-width) {
+    justify-content: flex-start;
+  }
 }
 
 .photo-posting__settings-photo {
@@ -15,6 +19,7 @@
   img {
     padding-right: 5px;
     height: 100%;
+    width: 100%;
     @media ($tablet-width) {
       width: 100%;
       height: auto;
@@ -41,7 +46,7 @@
   line-height: 30px;
   font-size: 14px;
   font-weight: 100;
-  padding: 50px 0;
+  padding: 50px 0 40px;
   @media ($tablet-width) {
     font-size: 18px;
     padding: 65px 0;
@@ -55,9 +60,21 @@
 
   form {
     padding-bottom: 15px;
+
+    @media ($tablet-width) {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-bottom: 0;
+    }
   }
   @media ($tablet-width) {
     width: 50%;
+  }
+
+  @media ($desktop-width) {
+    width: 42%;
   }
 }
 
@@ -166,7 +183,7 @@
     outline: none;
   }
 
-  &::-webkit-slider-thumb{
+  &::-webkit-slider-thumb {
     -webkit-appearance: none;
     background-color: #f2f2f2;
     border: 2px solid $pink-color;
@@ -265,6 +282,9 @@
 }
 
 .photo-posting__buttons {
+  button {
+    min-width: auto;
+  }
   padding-top: 30px;
   @media ($tablet-width) {
     padding: 0 5px 0 40px;

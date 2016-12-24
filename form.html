@@ -156,7 +156,7 @@
 
 <main>
   <div class="wrapper">
-    <div class="page-introduction">
+    <div class="page-introduction page-introduction--form-page">
       <h2 class="page-introduction__content">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль
         на
         вашу бонусную карту! <span
@@ -186,69 +186,75 @@
 
     <div class="wrapper-form-order wrapper-form-order--achievements form__container--bg">
       <div class="wrapper">
-        <ul class="form__achievements-item form__tabl-padding">
+        <div class="form__tabl-padding">
           <p class="form__title form__title--position">Ваши безбашенные достижения в путешествии</p>
-          <li>
-            <input id="achievements-item-1" name="achievements" type="checkbox" value="Selfie with a shark" checked>
-            <label for="achievements-item-1">Сделал селфи с акулой</label>
-          </li>
-          <li>
-            <input id="achievements-item-2" name="Got burn" type="checkbox" checked>
-            <label for="achievements-item-2">Обгорел на пляже</label>
-          </li>
-          <li>
-            <input id="achievements-item-3" name="Saw Chuck Norris" type="checkbox">
-            <label for="achievements-item-3">Видел Чака Норриса</label>
-          </li>
-          <li>
-            <input id="achievements-item-4" name="Bought souvenirs" type="checkbox">
-            <label for="achievements-item-4">Накупил сувениров</label>
-          </li>
-          <li>
-            <input id="achievements-item-5" name="Kept a tower" type="checkbox" checked>
-            <label for="achievements-item-5">Удержал башню</label>
-          </li>
-          <li>
-            <input id="achievements-item-6" name="Smashed up a hotel" type="checkbox">
-            <label for="achievements-item-6">Разгромил отель</label>
-          </li>
-        </ul>
+          <ul class="form__achievements-item">
+            <li>
+              <input id="achievements-item-1" name="achievements" type="checkbox" value="Selfie with a shark" checked>
+              <label for="achievements-item-1">Сделал селфи с акулой</label>
+            </li>
+            <li>
+              <input id="achievements-item-2" name="Got burn" type="checkbox" checked>
+              <label for="achievements-item-2">Обгорел на пляже</label>
+            </li>
+            <li>
+              <input id="achievements-item-3" name="Saw Chuck Norris" type="checkbox">
+              <label for="achievements-item-3">Видел Чака Норриса</label>
+            </li>
+            <li>
+              <input id="achievements-item-4" name="Bought souvenirs" type="checkbox">
+              <label for="achievements-item-4">Накупил сувениров</label>
+            </li>
+            <li>
+              <input id="achievements-item-5" name="Kept a tower" type="checkbox" checked>
+              <label for="achievements-item-5">Удержал башню</label>
+            </li>
+            <li>
+              <input id="achievements-item-6" name="Smashed up a hotel" type="checkbox">
+              <label for="achievements-item-6">Разгромил отель</label>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
     <div class="wrapper-form-order wrapper-form-order--contacts">
       <div class="wrapper">
-        <ul class="form__contacts-item form__tabl-padding">
+        <div class="form__tabl-padding">
           <p class="form__title form__title--position form__title--invisible">Контактная информация</p>
-          <li>
-            <label for="tel">Номер телефона</label>
-            <input id="tel" name="telephone-number" type="tel" placeholder="Номер, пожалуйста">
-          </li>
-          <li>
-            <label for="email">Адресок почты</label>
-            <input id="email" name="email" type="email" placeholder="Введите почту *">
-          </li>
-        </ul>
+          <ul class="form__contacts-item ">
+            <li>
+              <label for="tel">Номер телефона</label>
+              <input id="tel" name="telephone-number" type="tel" placeholder="Номер, пожалуйста">
+            </li>
+            <li>
+              <label for="email">Адресок почты</label>
+              <input id="email" name="email" type="email" placeholder="Введите почту *">
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
     <div class="wrapper-form-order wrapper-form-order--apps form__container--bg">
       <div class="wrapper">
-        <ul class="form__apps-item form__tabl-padding">
+        <div class="form__tabl-padding">
           <p class="form__title form__title--position">С каким приложением путешествовали?</p>
-          <li>
-            <input id="apps-item-1" name="OS" type="radio" checked>
-            <label for="apps-item-1">Pink для iOS</label>
-          </li>
-          <li>
-            <input id="apps-item-2" name="OS" type="radio">
-            <label for="apps-item-2">Pink на Android</label>
-          </li>
-          <li>
-            <input id="apps-item-3" name="OS" type="radio">
-            <label for="apps-item-3">Windows Phone</label>
-          </li>
-        </ul>
+          <ul class="form__apps-item">
+            <li>
+              <input id="apps-item-1" name="OS" type="radio" checked>
+              <label for="apps-item-1">Pink для iOS</label>
+            </li>
+            <li>
+              <input id="apps-item-2" name="OS" type="radio">
+              <label for="apps-item-2">Pink на Android</label>
+            </li>
+            <li>
+              <input id="apps-item-3" name="OS" type="radio">
+              <label for="apps-item-3">Windows Phone</label>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -283,13 +289,14 @@
   </div>
   <div class="pop-up pop-up--success">
     <h3 class="pop-up__title">Ваша заявка отправлена</h3>
-    <p class="pop-up__description pop-up__description--success">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и
+    <p class="pop-up__description pop-up__description--success">Спасибо за ваше участие, ваша заявка уже поступила к
+      нам. В ближайшее время мы рассмотрим ее и
       оповестим вас.</p>
     <div class="pop-up__button-wrapper">
-    <div class="pop-up__button">
-      <button class="rectangular-button" type="submit">Оk</button>
+      <div class="pop-up__button">
+        <button class="rectangular-button" type="submit">Оk</button>
+      </div>
     </div>
-  </div>
   </div>
 </main>
 
