@@ -1,0 +1,38 @@
+.pop-up {
+  @include container();
+  box-shadow: 0 2px 12px -4px;
+  margin: 15px auto;
+
+  &--success {
+    padding: 0;
+  }
+}
+
+.pop-up__title {
+  font-family: $opensans-bold;
+  font-size: 18px;
+  padding: 40px 0;
+}
+
+.pop-up__description {
+  &--success {
+    @include container();
+    margin-bottom: 40px;
+  }
+}
+
+.pop-up__button .rectangular-button {
+  padding: 25px 0;
+  width: 100%;
+}
+
+.pop-up__button-wrapper {
+  @include container();
+
+  background-color: $light-grey-color;
+}
+
+.pop-up__button {
+  padding: 45px 0 50px;
+}
+
