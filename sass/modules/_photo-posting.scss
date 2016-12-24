@@ -101,30 +101,31 @@
   cursor: pointer;
   width: 50px;
   height: 50px;
-  background-repeat: no-repeat;
   display: block;
-  background-position: 50%;
 
   @media ($tablet-width) {
-    background-size: 23px;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+    svg {
+      width: 30px;
+      height: 30px;
+    }
   }
   @media ($desktop-width) {
-    background-size: 35px;
-
+    width: 40px;
+    height: 40px;
+    svg {
+      width: 40px;
+      height: 40px;
+    }
   }
   &--crop {
-    background-image: url("../img/icon-editor-crop.svg");
   }
 
   &--color {
-    background-image: url("../img/icon-editor-fill.svg");
-    //padding: 0 50px;
   }
 
   &--brightness {
-    background-image: url("../img/icon-editor-contrast.svg");
   }
 }
 
@@ -165,7 +166,7 @@
     outline: none;
   }
 
-  &::-webkit-slider-thumb {
+  &::-webkit-slider-thumb{
     -webkit-appearance: none;
     background-color: #f2f2f2;
     border: 2px solid $pink-color;
@@ -174,6 +175,10 @@
     border-radius: 50px;
     cursor: pointer;
     margin-top: -6px;
+
+    &:active {
+      background-color: $pink-color;
+    }
   }
 
   &::-moz-range-track {
@@ -190,6 +195,10 @@
     border-radius: 50px;
     cursor: pointer;
     margin-bottom: -6px;
+
+    &:active {
+      background-color: $pink-color;
+    }
   }
 
   &::-ms-track {
@@ -217,10 +226,14 @@
     height: 15px;
     border-radius: 50px;
     cursor: pointer;
+
+    &:active {
+      background-color: $pink-color;
+    }
   }
   @media ($tablet-width) {
     width: 100%;
-    padding: 0 5px;
+    margin: 0 5px;
   }
 }
 

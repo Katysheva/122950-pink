@@ -37,6 +37,15 @@
     &::-webkit-input-placeholder {
       color: $grey-color;
     }
+
+    &:hover,
+    &:focus {
+      border-color: $grey-color;
+    }
+
+    &:active {
+      border-color: $pink-color;
+    }
   }
 
   li {
@@ -72,15 +81,18 @@
 
   li {
     margin-bottom: 17px;
+
     &:last-child {
       @media ($tablet-width) {
         margin-bottom: 0;
       }
     }
+
     @media ($tablet-width) {
       display: flex;
       margin-bottom: 50px;
     }
+
     @media ($desktop-width) {
       margin-bottom: 0;
     }
@@ -134,11 +146,13 @@
         padding-bottom: 0;
       }
     }
+
     &:nth-of-type(n+3) {
       @media ($desktop-width) {
         padding-bottom: 0;
       }
     }
+
     @media ($desktop-width) {
       flex-basis: 33%;
     }
@@ -149,34 +163,52 @@
     flex-wrap: wrap;
     flex-direction: column;
   }
+
   @media ($desktop-width) {
     flex-direction: row;
   }
 }
 
-.form__achievements-item input[type="checkbox"] {
-  display: none;
-}
+.form__achievements-item {
+  input[type="checkbox"] {
+    display: none;
+  }
 
-.form__achievements-item label::before {
-  content: "";
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  border: 2px solid #e5e5e5;
-  position: absolute;
-  left: 0;
-}
+  label {
+    &:before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 35px;
+      height: 35px;
+      border: 2px solid #e5e5e5;
+      position: absolute;
+      left: 0;
+    }
 
-.form__achievements-item input[type=checkbox]:checked + label::before {
+    &:hover,
+    &:focus {
+      &::before {
+        border-color: $grey-color;
+      }
+    }
 
-  background-image: url("../img/icon-yes.svg");
-  width: 35px;
-  height: 35px;
-  position: absolute;
-  left: 0;
-  background-repeat: no-repeat;
-  background-position: 7px 8px;
+    &:active {
+      &::before {
+        border-color: $pink-color;
+      }
+    }
+  }
+
+  input[type=checkbox]:checked + label::before {
+    background-image: url("../img/icon-yes.svg");
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: 7px 8px;
+  }
 }
 
 .form__contacts-item {
@@ -191,11 +223,13 @@
         padding: 0;
       }
     }
+
     &:nth-of-type(2) {
       @media ($desktop-width) {
         padding-top: 0;
       }
     }
+
     @media ($tablet-width) {
       display: flex;
       flex-direction: column;
@@ -207,6 +241,7 @@
         padding-top: 10px;
       }
     }
+
     @media ($desktop-width) {
       flex-basis: 44%;
     }
@@ -256,23 +291,37 @@
     padding-left: 70px;
     position: relative;
     font-size: 18px;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 40px;
+      height: 40px;
+      border: 2px solid #e5e5e5;
+      background-color: $white-color;
+      border-radius: 50px;
+      position: absolute;
+      left: 0;
+      top: -10px;
+    }
+
+    &:hover,
+    &:focus {
+      &::before {
+        border-color: $grey-color;
+      }
+    }
+
+    &:active {
+      &:before {
+        border-color: $pink-color;
+      }
+    }
   }
 
   input[type="radio"] {
     display: none;
-  }
-
-  label::before {
-    content: "";
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    border: 2px solid #e5e5e5;
-    background-color: $white-color;
-    border-radius: 50px;
-    position: absolute;
-    left: 0;
-    top: -10px;
   }
 
   input[type=radio]:checked + label::before {
@@ -318,6 +367,7 @@
       margin-top: 0;
       min-height: 200px;
     }
+
     @media ($desktop-width) {
       min-height: 120px;
     }
@@ -331,6 +381,7 @@
   span {
     color: $pink-color;
   }
+
   @media ($tablet-width) {
     padding-top: 0;
   }
@@ -344,6 +395,7 @@
     position: relative;
     margin-top: 65px;
   }
+
   @media ($desktop-width) {
     margin: 0;
   }
@@ -370,6 +422,7 @@
       order: 1;
       padding-bottom: 0;
     }
+
     @media ($desktop-width) {
       flex-basis: 45%;
     }
@@ -379,6 +432,7 @@
     @media ($tablet-width) {
       order: 4;
     }
+
     @media ($desktop-width) {
       flex-basis: 100%;
       padding-top: 40px;
@@ -410,6 +464,7 @@
     @media ($tablet-width) {
       order: 2;
     }
+
     @media ($desktop-width) {
       flex-basis: 45%;
     }
@@ -421,6 +476,7 @@
     @media ($tablet-width) {
       order: 5;
     }
+
     @media ($desktop-width) {
       flex-basis: 100%;
       margin-top: 50px;
@@ -444,4 +500,3 @@
   }
 }
 
-//}

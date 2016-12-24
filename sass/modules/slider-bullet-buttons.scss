@@ -6,10 +6,6 @@
     margin: 0 5px;
   }
 
-  svg {
-    fill: $bullet-buttons-color;
-  }
-
   &--tariffs {
     padding: 40px;
     @media ($tablet-width) {
@@ -24,5 +20,11 @@
 
   @media ($desktop-width) {
     display: none;
+  }
+}
+
+.bullet-button {
+  svg {
+    fill: $bullet-buttons-color;
   }
 }
