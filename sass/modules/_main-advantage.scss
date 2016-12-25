@@ -32,21 +32,35 @@
 }
 
 .main-advantage__img {
+  position: relative;
+
 
   img {
+    width: 240px;
+
     @media ($desktop-width) {
       min-height: 345px;
     }
   }
+
   @media ($desktop-width) {
     flex-basis: 41%;
     padding-right: 20px;
   }
 }
 
+.main-advantage__img-text {
+  position: absolute;
+  font-size: 96px;
+  line-height: 150px;
+  color: $pink-color;
+  font-family: $opensans-bold;
+  transform: translate(-50%, -50%);
+  top: 53%;
+  left: 38%;
+}
 
 .main-advantage__info {
-
   h2 {
     font-family: "Open Sans Bold", "Arial", sans-serif;
     font-size: 30px;
@@ -60,7 +74,6 @@
     min-height: 210px;
     justify-content: space-between;
     padding-right: 5px;
-    padding-top: 16px;
   }
 
   @media ($desktop-width) {
@@ -86,7 +99,8 @@
 }
 
 .main-advantage__link {
-  font-size: 18px;
+  font-size: 14px;
+
   a {
     color: $pink-color;
     text-decoration: underline;

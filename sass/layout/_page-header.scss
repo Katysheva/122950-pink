@@ -12,36 +12,55 @@ header {
   background-color: #2c3c4c;
   position: relative;
   background-size: cover;
-  padding: 30px 0;
+  padding: 105px 0 80px;
   min-height: 170px;
 
   @media ($tablet-width) {
-    min-height: 330px;
-    padding: 80px 0 0;
+    min-height: 435px;
+    padding: 180px 0 0;
     background-image: url(../img/bg-back-tablet@1x.jpg);
   }
 
   @media ($desktop-width) {
-    min-height: 285px;
-    padding: 40px 0 0;
+    min-height: 395px;
+    padding: 175px 0 0;
     background-image: url(../img/bg-back-desktop@1x.jpg);
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url(../img/bg-back-mobile@2x.jpg);
+    background-size: 640px auto;
+  }
+
+  @media (min-resolution: 144dpi) and ($tablet-width), (min-resolution: 1.5dppx) and ($tablet-width) {
+    background-image: url(../img/bg-back-tablet@2x.jpg);
+    background-size: 1400px auto;
+  }
+
+  @media (min-resolution: 144dpi) and ($desktop-width), (min-resolution: 1.5dppx) and ($desktop-width) {
+    background-image: url(../img/bg-back-desktop@2x.jpg);
+    background-size: 2400px auto;
   }
 
   &--main-page {
     min-height: 460px;
     padding: 0;
+
     .page-header__title {
       h1 {
         padding: 0;
       }
+
       @media ($desktop-width) {
         padding: 20px 25px 65px;
       }
-      }
+    }
+
     @media ($tablet-width) {
       min-height: 619px;
     }
   }
+
   &--form-page {
     .page-header__title {
       h1 {
@@ -58,9 +77,8 @@ header {
   }
 
   @media ($desktop-width) {
-    padding: 30px 25px 55px;
+    padding: 7px 25px 55px;
   }
-  //padding-top: 27px;
 
   h1 {
     font-family: $opensans-light;
@@ -85,16 +103,19 @@ header {
 .page-header__content {
   display: flex;
   flex-direction: column;
+  padding-top: 185px;
 
   @media ($tablet-width) {
     flex-direction: row;
-    padding-top: 90px;
+    padding-top: 165px;
+    padding-bottom: 110px;
   }
 
   @media ($desktop-width) {
-    //padding-top: 62px;
+    padding-top: 205px;
     padding-bottom: 120px;
   }
+
   .download {
     order: 1;
     margin: 0;
@@ -104,17 +125,12 @@ header {
       margin: 0;
       width: 55%;
     }
-
-    //@media ($desktop-width) {
-    //  width: 100%;
-    //  padding: 0 20px 30px 60px;
-    //}
   }
 }
 
 .page-header__hand-img {
   width: 100%;
-  padding-top: 107px;
+  //padding-top: 110px;
   padding-right: 60px;
 
   img {
@@ -124,21 +140,21 @@ header {
 
     @media ($tablet-width) {
       position: absolute;
-      max-width: 71%;
-      right: 15px;
-      min-height: 547px;
+      right: 0;
       width: auto;
       bottom: 0;
       z-index: 0;
       display: block;
     }
-
-    @media ($desktop-width) {
-      left: 40%;
-      min-height: 645px;
-    }
   }
 }
 
+.page-header__wrapper {
+  position: relative;
+  z-index: 2;
+  @media ($desktop-width) {
+    background-color: rgba($grey-color, 0.52);
+  }
+}
 
 
