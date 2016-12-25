@@ -1,6 +1,6 @@
 .map {
   flex-direction: row;
-  background-image: url(../img/bg-map-mobile@1x.png);
+  background-image: url(../img/bg-map-mobile@1x.jpg);
   background-color: #eae6dd;
   background-repeat: no-repeat;
   min-height: 200px;
@@ -9,12 +9,27 @@
 
   @media ($tablet-width) {
     min-height: 380px;
-    background-image: url(../img/bg-map-tablet@1x.png);
+    background-image: url(../img/bg-map-tablet@1x.jpg);
   }
 
   @media ($desktop-width) {
     min-height: 515px;
-    background-image: url(../img/bg-map-desktop@1x.png);
+    background-image: url(../img/bg-map-desktop@1x.jpg);
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url(../img/bg-map-mobile@2x.jpg);
+    background-size: 640px auto;
+  }
+
+  @media (min-resolution: 144dpi) and ($tablet-width), (min-resolution: 1.5dppx) and ($tablet-width) {
+    background-image: url(../img/bg-map-tablet@2x.jpg);
+    background-size: 1400px auto;
+  }
+
+  @media (min-resolution: 144dpi) and ($desktop-width), (min-resolution: 1.5dppx) and ($desktop-width) {
+    background-image: url(../img/bg-map-desktop@2x.jpg);
+    background-size: 2400px auto;
   }
 
   &::before {
