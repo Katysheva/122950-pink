@@ -107,12 +107,11 @@ header {
 
   @media ($tablet-width) {
     flex-direction: row;
-    padding-top: 165px;
+    padding-top: 0;
     padding-bottom: 110px;
   }
 
   @media ($desktop-width) {
-    padding-top: 205px;
     padding-bottom: 120px;
   }
 
