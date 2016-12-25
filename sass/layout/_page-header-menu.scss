@@ -4,9 +4,9 @@
   @media ($tablet-width) {
     margin-bottom: -105px;
   }
-    @media ($desktop-width) {
-    //@include container();
-
+  @media ($desktop-width) {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     //background-color: #283645;
@@ -17,7 +17,6 @@
     margin-bottom: -115px;
   }
 }
-
 
 .page-header-menu__title {
   position: relative;
@@ -62,7 +61,7 @@
   }
 
   @media ($desktop-width) {
-    padding: 15px;
+    //padding: 15px;
   }
 }
 
