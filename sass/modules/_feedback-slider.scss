@@ -1,10 +1,22 @@
 .feedback-slider {
   @include container();
-  margin-top: 50px;
+  margin-top: 45px;
+
+  @media ($tablet-width) {
+    padding: 0 40px 15px;
+  }
+
+    @media ($desktop-width) {
+    padding: 0 40px 45px;
+  }
 }
 
 .feedback-slider__list {
   line-height: 30px;
+
+  @media ($desktop-width) {
+    padding-top: 140px;
+  }
 }
 
 .feedback-slider__item {
@@ -15,12 +27,17 @@
 }
 
 .feedback-slider__item-name {
-    font-family: $opensans-bold;
-    font-size: 18px;
-    color: #000;
-    @media ($tablet-width) {
-      font-size: 20px;
-      padding-top: 50px;
+  font-family: $opensans-bold;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 10px;
+  @media ($tablet-width) {
+    font-size: 20px;
+    padding-top: 35px;
+    margin: 0;
+  }
+  @media ($desktop-width) {
+    font-size: 24px;
   }
 }
 
@@ -33,6 +50,11 @@
   @media ($tablet-width) {
     display: block;
   }
+
+  @media ($desktop-width) {
+    line-height: 30px;
+    font-size: 18px
+  }
 }
 
 .feedback-slider__item-description {
@@ -41,5 +63,12 @@
     font-size: 18px;
     line-height: 30px;
   }
+
+  @media ($desktop-width) {
+    padding: 0 130px;
+  }
 }
 
+.feedback-slider .slider-bullet-buttons {
+  padding-bottom: 0;
+}

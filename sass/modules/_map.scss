@@ -1,6 +1,7 @@
 .map {
   flex-direction: row;
   background-image: url(../img/bg-map-mobile@1x.png);
+  background-color: #eae6dd;
   background-repeat: no-repeat;
   min-height: 200px;
   position: relative;
@@ -8,10 +9,12 @@
 
   @media ($tablet-width) {
     min-height: 380px;
+    background-image: url(../img/bg-map-tablet@1x.png);
   }
 
   @media ($desktop-width) {
-    min-height: 525px;
+    min-height: 515px;
+    background-image: url(../img/bg-map-desktop@1x.png);
   }
 
   &::before {
@@ -30,7 +33,7 @@
     position: absolute;
     top: 55%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     cursor: pointer;
   }
 }

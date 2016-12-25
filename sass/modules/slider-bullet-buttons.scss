@@ -1,18 +1,30 @@
 .slider-bullet-buttons {
-  padding: 40px;
+  padding: 30px;
 
   li {
     display: inline-block;
-  }
-
-  svg {
-    fill: $bullet-buttons-color;
+    margin: 0 5px;
   }
 
   &--tariffs {
+    padding: 40px;
     @media ($tablet-width) {
       display: none;
     }
 
+  }
+
+  @media ($tablet-width) {
+    padding-bottom: 25px;
+  }
+
+  @media ($desktop-width) {
+    display: none;
+  }
+}
+
+.bullet-button {
+  svg {
+    fill: $bullet-buttons-color;
   }
 }

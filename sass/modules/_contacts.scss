@@ -1,17 +1,29 @@
 .contacts {
   font-size: 24px;
-  padding: 50px 0 0;
+  padding: 40px 0 0;
+
   @media ($tablet-width) {
     padding: 55px 0 0;
+  }
+
+  @media ($desktop-width) {
+    padding: 80px 0 0;
   }
 }
 
 .contacts__title h2 {
   font-family: $opensans-light;
   font-size: 24px;
-  line-height: 40px;
+  line-height: 30px;
+
   @media ($tablet-width) {
     font-size: 40px;
+    padding-bottom: 15px;
+  }
+
+  @media ($desktop-width) {
+    padding-bottom: 30px;
+    font-size: 50px;
   }
 }
 
@@ -25,27 +37,32 @@
   padding-bottom: 40px;
 
   @media ($tablet-width) {
-    padding: 30px 0 30px;
+    padding: 25px 0 30px;
+  }
+
+  @media ($desktop-width) {
+    padding: 0 0 5px;
   }
 }
 
 .contacts__list-item {
-  padding: 5px;
-
-  @media ($tablet-width) {
-    flex-basis: 50%;
-
-  }
+  padding: 5px 5px 8px;
+  line-height: 25px;
 
   h3 {
     font-family: $opensans-bold;
     font-size: 18px;
-    margin: 28px 0 10px;
+    margin: 10px 0 5px;
+
+    @media ($desktop-width) {
+      margin: 10px 0 25px
+    }
   }
 
   &:last-child {
     @media ($tablet-width) {
-      flex-basis: 100%;
+      flex-basis: 50%;
+      padding-top: 30px;
     }
 
     @media ($desktop-width) {
@@ -53,13 +70,18 @@
     }
   }
 
-  @media ($desktop-width) {
-    flex-basis: 30%;
-  }
-
   &:nth-child(2) {
     @media ($desktop-width) {
       order: 1;
     }
   }
+
+  @media ($tablet-width) {
+    flex-basis: 50%;
+  }
+
+  @media ($desktop-width) {
+    flex-basis: 35%;
+  }
+
 }

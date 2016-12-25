@@ -1,58 +1,144 @@
 header {
   position: relative;
+  @media ($tablet-width) {
+    background: $grey-color;
+  }
 }
 
 .page-header {
-  background: url(../img/bg-back-mobile@1x.jpg);
+  background-image: url(../img/bg-back-mobile@1x.jpg);
   background-position: 60% 0;
   background-repeat: no-repeat;
+  background-color: #2c3c4c;
   position: relative;
   background-size: cover;
-  min-height: 240px;
+  padding: 30px 0;
+  min-height: 170px;
 
   @media ($tablet-width) {
-    min-height: 440px;
+    min-height: 330px;
+    padding: 80px 0 0;
+    background-image: url(../img/bg-back-tablet@1x.jpg);
   }
 
   @media ($desktop-width) {
-    min-height: 395px;
+    min-height: 285px;
+    padding: 40px 0 0;
+    background-image: url(../img/bg-back-desktop@1x.jpg);
   }
 
   &--main-page {
     min-height: 460px;
-
+    padding: 0;
+    .page-header__title {
+      h1 {
+        padding: 0;
+      }
+      @media ($desktop-width) {
+        padding: 20px 25px 65px;
+      }
+      }
     @media ($tablet-width) {
-      min-height: 850px;
+      min-height: 619px;
     }
-
-    img {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      display: block;
+  }
+  &--form-page {
+    .page-header__title {
+      h1 {
+        padding: 0 10%;
+      }
     }
   }
 }
 
 .page-header__title {
-  padding-top: 35px;
+  padding: 0 20px;
+  @media ($tablet-width) {
+    padding: 0 50px 28px 50px;
+  }
+
+  @media ($desktop-width) {
+    padding: 30px 25px 55px;
+  }
+  //padding-top: 27px;
 
   h1 {
     font-family: $opensans-light;
     font-size: 24px;
-    line-height: 35px;
+    line-height: 30px;
     color: $white-color;
     font-weight: 300;
-    width: 170px;
     margin: 0 auto;
 
     @media ($tablet-width) {
       line-height: 50px;
       font-size: 50px;
-      padding: 0 120px 65px;
-      width: 595px;
+      padding: 0 10%;
+    }
+
+    @media ($desktop-width) {
+      padding: 0 30%;
     }
   }
 }
+
+.page-header__content {
+  display: flex;
+  flex-direction: column;
+
+  @media ($tablet-width) {
+    flex-direction: row;
+    padding-top: 90px;
+  }
+
+  @media ($desktop-width) {
+    //padding-top: 62px;
+    padding-bottom: 120px;
+  }
+  .download {
+    order: 1;
+    margin: 0;
+
+    @media ($tablet-width) {
+      order: 0;
+      margin: 0;
+      width: 55%;
+    }
+
+    //@media ($desktop-width) {
+    //  width: 100%;
+    //  padding: 0 20px 30px 60px;
+    //}
+  }
+}
+
+.page-header__hand-img {
+  width: 100%;
+  padding-top: 107px;
+  padding-right: 60px;
+
+  img {
+    display: block;
+    height: auto;
+    width: 100%;
+
+    @media ($tablet-width) {
+      position: absolute;
+      max-width: 71%;
+      right: 15px;
+      min-height: 547px;
+      width: auto;
+      bottom: 0;
+      z-index: 0;
+      display: block;
+    }
+
+    @media ($desktop-width) {
+      left: 40%;
+      min-height: 645px;
+    }
+  }
+}
+
 
 

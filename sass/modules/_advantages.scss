@@ -1,13 +1,18 @@
 .advantages {
   background-color: $light-grey-color;
-  padding-top: 90px;
-  padding-bottom: 47px;
+  padding-top: 80px;
+  padding-bottom: 50px;
   position: relative;
   overflow: hidden;
 
   @media ($tablet-width) {
-    padding-top: 80px;
-    padding-bottom: 0;
+    padding-top: 72px;
+    //padding-bottom: 0;
+    padding-bottom: 7px;
+  }
+
+  @media ($desktop-width) {
+    padding-top: 100px;
   }
 
   &::before {
@@ -24,18 +29,41 @@
 }
 
 .advantages__item {
+  margin-bottom: 33px;
+
+  @media ($tablet-width) {
+    margin-bottom: 35px;
+  }
+
   @media ($desktop-width) {
     width: 30%;
   }
 }
 
+.advantages__item-description {
+  @media ($desktop-width) {
+    //padding: 22px 24px;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 15px;
+  }
+}
+
+
+
 .advantages__item-title {
   font-family: $opensans-bold;
   font-size: 18px;
-  line-height: 10px;
+  //line-height: 10px;
   //background-color: #f2f2f2;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   line-height: 20px;
+
+  @media ($desktop-width) {
+    font-size: 30px;
+    line-height: 30px;
+    padding: 0 20px 25px;
+  }
 }
 
 .advantages .wrapper {
@@ -46,6 +74,7 @@
 
   @media ($desktop-width) {
     flex-direction: column;
+    padding: 0 140px;
   }
 }
 
@@ -70,9 +99,21 @@
   margin-bottom: -95px;
   margin-top: 28px;
 
+  img {
+    @media ($tablet-width) {
+      height: 540px;
+      max-width: 100%;
+    }
+    @media ($desktop-width) {
+      min-height: 390px;
+      height: auto;
+      //width: 69%;
+    }
+  }
+
   @media ($tablet-width) {
     //flex-basis: 50%;
-    margin-top: -60px;
+    margin-top: -70px;
     position: relative;
   }
 
@@ -80,13 +121,7 @@
     text-align: center;
     padding: 0 5px;
     width: 30%;
-  }
-
-  img {
-    @media ($tablet-width) {
-      height: 530px;
-      max-width: 100%;
-    }
+    margin-top: -100px;
   }
 }
 

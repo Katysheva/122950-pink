@@ -1,8 +1,18 @@
 .tariffs {
-  padding-top: 90px;
+  padding-top: 120px;
   background-color: $light-grey-color;
   position: relative;
   overflow: hidden;
+
+  @media ($tablet-width) {
+    padding-top: 85px;
+    padding-bottom: 70px;
+  }
+
+  @media ($desktop-width) {
+    padding-top: 145px;
+    padding-bottom: 95px;
+  }
 
   &:before {
     content: "";
@@ -21,35 +31,51 @@
   width: 630px;
   margin: 0 auto;
   overflow: hidden;
+
+  @media ($desktop-width) {
+    width: auto;
+  }
 }
 
 .tariffs__list {
   line-height: 30px;
   margin: 0 auto;
   border-collapse: collapse;
-  transform: translateX(-30%);
+  transform: translateX(-31%);
 
   @media ($tablet-width) {
     transform: translateX(0%);
-    margin-bottom: 70px;
+    padding-bottom: 70px;
+  }
+
+  @media ($desktop-width) {
+    padding-bottom: 95px;
   }
 }
 
 .tariffs__item {
   text-transform: uppercase;
   border: 1px solid;
-  padding: 25px;
   background-color: $grey-color;
   color: $white-color;
   min-width: 280px;
+  position: relative;
+  padding: 20px 0;
 
   @media ($tablet-width) {
     min-width: 155px;
+    padding: 10px 15px;
+  }
+
+  @media ($desktop-width) {
+    padding: 18px 63px;
+    min-width: 236px;
   }
 
   h3 {
     font-size: 18px;
     font-family: $opensans-bold;
+
     @media ($tablet-width) {
       font-size: 16px;
     }
@@ -62,6 +88,10 @@
     @media ($tablet-width) {
       font-size: 18px;
     }
+
+    @media ($desktop-width) {
+      font-size: 22px;
+    }
   }
 }
 
@@ -71,21 +101,9 @@
   border: 2px solid #e5e5e5;
 }
 
-.tariffs__item {
-  position: relative;
-  padding: 25px 0;
-
-  @media ($tablet-width) {
-    padding: 10px 15px;
-  }
-}
-
 .tariff-feature__access {
-  padding: 20px;
+  padding: 14px 20px;
 
-  @media ($tablet-width) {
-    padding: 6px 15px;
-  }
 
   &--enable svg {
     fill: #3dc644;
@@ -93,6 +111,20 @@
 
   &--disable svg {
     fill: #f25b26;
+
+    @media ($tablet-width) {
+      padding: 0;
+    }
+
+    @media ($desktop-width) {
+      padding: 0 102px 0 65px;
+    }
+  }
+  @media ($tablet-width) {
+    padding: 7px 20px;
+  }
+  @media ($desktop-width) {
+    padding: 7px 20px;
   }
 }
 
@@ -124,6 +156,11 @@
     display: table-cell;
     padding: 0 15px;
     min-width: 155px;
+  }
+
+  @media ($desktop-width) {
+    padding: 14px 60px 14px 30px;
+    font-size: 18px;
   }
 }
 
@@ -160,4 +197,3 @@
 .tariff-feature {
   background-color: $white-color;
 }
-
