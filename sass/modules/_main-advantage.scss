@@ -17,7 +17,7 @@
   }
 
   @media ($desktop-width) {
-    padding: 23px 0 60px;
+    padding: 23px 10px 60px;
   }
 }
 
@@ -33,31 +33,36 @@
 
 .main-advantage__img {
   position: relative;
-
+  margin-right: 75px;
+  flex-basis: auto;
 
   img {
-    width: 240px;
+    //width: 240px;
+    max-height: 270px;
 
     @media ($desktop-width) {
-      min-height: 345px;
+      max-height: none;
     }
   }
 
   @media ($desktop-width) {
-    flex-basis: 41%;
-    padding-right: 20px;
+    margin-right: 65px;
   }
 }
 
 .main-advantage__img-text {
   position: absolute;
-  font-size: 96px;
+  font-size: 100px;
   line-height: 150px;
   color: $pink-color;
   font-family: $opensans-bold;
   transform: translate(-50%, -50%);
   top: 53%;
-  left: 38%;
+  left: 50%;
+
+  @media ($desktop-width) {
+    font-size: 120px;
+  }
 }
 
 .main-advantage__info {
@@ -104,5 +109,9 @@
   a {
     color: $pink-color;
     text-decoration: underline;
+  }
+
+  @media ($desktop-width) {
+    font-size: 18px;
   }
 }
