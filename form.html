@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>forms</title>
   <link href="css/style.css" rel="stylesheet">
+  <script defer src="js/open-menu.js"></script>
 </head>
 <body>
 <div class="svg-sprite">
@@ -124,7 +125,7 @@
 <header>
   <div class="page-header__wrapper">
     <div class="page-header-menu">
-      <div class="page-header-menu__title page-header-menu__title--opened-menu">
+      <div id="page-header-menu__title" class="page-header-menu__title">
         <a href="index.html" class="logo">
           <!--pink-->
           <svg width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859">
@@ -136,7 +137,7 @@
             <use xlink:href="#logo-pink-blue-mobile"/>
           </svg>
         </a>
-        <button title="show menu" type="button" class="page-header-menu__toggle page-header-menu__toggle--opened">
+        <button id="toggle-button" title="show menu" type="button" class="page-header-menu__toggle" onclick="showMenu('page-header-menu');">
           <svg class="open-menu" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007">
             <use xlink:href="#icon-menu-burger"/>
           </svg>
@@ -145,11 +146,11 @@
           </svg>
         </button>
       </div>
-      <nav class="page-header-menu__navigation">
+      <nav id="page-header-menu" class="page-header-menu__navigation">
         <ul class="page-header-menu__navigation-list">
           <li><a href="index.html">главная</a></li>
-          <li><a href="photo.html">фотография</a></li>
-          <li><a class="page-header-menu__navigation-list--active" href="#">конкурс</a></li>
+          <li><a class="page-header-menu__navigation-list--active" href="photo.html">фотография</a></li>
+          <li><a href="form.html">конкурс</a></li>
           <li><a target="_blank" href="https://htmlacademy.ru/">html-academy</a></li>
         </ul>
       </nav>

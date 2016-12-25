@@ -12,17 +12,17 @@ header {
   background-color: #2c3c4c;
   position: relative;
   background-size: cover;
-  padding: 30px 0;
+  padding: 105px 0 80px;
   min-height: 170px;
 
   @media ($tablet-width) {
-    min-height: 330px;
-    padding: 80px 0 0;
+    min-height: 435px;
+    padding: 180px 0 0;
     background-image: url(../img/bg-back-tablet@1x.jpg);
   }
 
   @media ($desktop-width) {
-    min-height: 285px;
+    min-height: 395px;
     padding: 175px 0 0;
     background-image: url(../img/bg-back-desktop@1x.jpg);
   }
@@ -77,7 +77,7 @@ header {
   }
 
   @media ($desktop-width) {
-    padding: 30px 25px 55px;
+    padding: 7px 25px 55px;
   }
 
   h1 {
@@ -103,14 +103,16 @@ header {
 .page-header__content {
   display: flex;
   flex-direction: column;
+  padding-top: 185px;
 
   @media ($tablet-width) {
     flex-direction: row;
-    padding-top: 90px;
+    padding-top: 165px;
+    padding-bottom: 110px;
   }
 
   @media ($desktop-width) {
-    padding-top: 225px;
+    padding-top: 205px;
     padding-bottom: 120px;
   }
 
@@ -128,7 +130,7 @@ header {
 
 .page-header__hand-img {
   width: 100%;
-  padding-top: 107px;
+  //padding-top: 110px;
   padding-right: 60px;
 
   img {
@@ -147,12 +149,11 @@ header {
   }
 }
 
-
 .page-header__wrapper {
+  position: relative;
+  z-index: 2;
   @media ($desktop-width) {
     background-color: rgba($grey-color, 0.52);
-    position: relative;
-    z-index: 2;
   }
 }
 

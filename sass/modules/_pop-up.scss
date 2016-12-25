@@ -17,6 +17,7 @@
 .pop-up__description {
   &--success {
     @include container();
+
     margin-bottom: 40px;
   }
 }
@@ -35,4 +36,3 @@
 .pop-up__button {
   padding: 45px 0 50px;
 }
-
