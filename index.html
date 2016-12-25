@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
-  <link href="build/css/style.min.css" rel="stylesheet">
-  <script defer src="build/js/open-menu.js"></script>
+  <link href="css/style.min.css" rel="stylesheet">
+  <script defer src="js/open-menu.js"></script>
 </head>
 <body>
 <header>
@@ -22,7 +22,8 @@
             <use xlink:href="#logo-pink-blue-mobile"/>
           </svg>
         </a>
-        <button id="toggle-button" title="show menu" type="button" class="page-header-menu__toggle" onclick="showMenu('page-header-menu');">
+        <button id="toggle-button" title="show menu" type="button" class="page-header-menu__toggle"
+                onclick="showMenu('page-header-menu');">
           <svg class="open-menu" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007">
             <use xlink:href="#icon-menu-burger"/>
           </svg>
@@ -64,7 +65,7 @@
         <picture>
           <source media="(min-width: 960px)"
                   srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x"/>
-          <source media="(min-width: 690px)"
+          <source media="(min-width: 620px)"
                   srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x"/>
           <img src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Hand">
         </picture>
@@ -110,13 +111,27 @@
 
       <div class="advantages__img-wrapper">
         <div class="advantages__img">
-          <img src="img/iphone-screen-mobile@1x.png" alt="">
+          <picture>
+            <source media="(min-width: 960px)"
+                    srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x"/>
+            <source media="(min-width: 620px)"
+                    srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x"/>
+            <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Hand">
+          </picture>
         </div>
         <div class="advantages__img">
-          <img src="img/iphone-screen-mobile@1x.png" alt="">
+          <picture>
+            <source media="(min-width: 960px)"
+                    srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x"/>
+            <img src="img/iphone-screen-2-tablet@1x.png 1x" srcset="img/iphone-screen-2-tablet@x.png 2x" alt="Hand">
+          </picture>
         </div>
         <div class="advantages__img">
-          <img src="img/iphone-screen-mobile@1x.png" alt="">
+          <picture>
+            <source media="(min-width: 960px)"
+                    srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x"/>
+            <img src="img/iphone-screen-3-tablet@1x.png 1x" srcset="img/iphone-screen-3-tablet@x.png 2x" alt="Hand">
+          </picture>
         </div>
       </div>
     </div>
@@ -147,6 +162,12 @@
   </div>
 
   <section class="feedback-slider">
+    <a href="#" title="review-prev">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+        <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
+      </svg>
+
+    </a>
 
     <ul class="feedback-slider__list">
       <li class="feedback-slider__item">
@@ -172,6 +193,13 @@
         </p>
       </li>
     </ul>
+
+    <a href="#" title="review-next">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+        <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
+      </svg>
+
+    </a>
 
     <div class="svg-definition">
       <svg width="80" height="12" xmlns="http://www.w3.org/2000/svg"

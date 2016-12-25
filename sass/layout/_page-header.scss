@@ -58,6 +58,11 @@ header {
 
     @media ($tablet-width) {
       min-height: 619px;
+      padding-top: 200px;
+    }
+
+    @media ($desktop-width) {
+      padding: 205px 0 0;
     }
   }
 
@@ -78,6 +83,8 @@ header {
 
   @media ($desktop-width) {
     padding: 7px 25px 55px;
+    max-width: 1000px;
+    margin: 0 auto;
   }
 
   h1 {

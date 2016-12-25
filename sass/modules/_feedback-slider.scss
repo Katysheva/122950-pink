@@ -1,22 +1,66 @@
 .feedback-slider {
   @include container();
   margin-top: 45px;
+  position: relative;
+
+  a[title^=review] {
+    display: none;
+    @media ($desktop-width) {
+      display: block;
+      position: absolute;
+      top: 30%;
+      left: 10%;
+
+      svg {
+        fill: rgba($grey-color, 0.6);
+      }
+
+      &:hover,
+      &:focus {
+        svg {
+          fill: $grey-color;
+        }
+      }
+
+      &:active {
+        svg {
+          fill: rgba($grey-color, 0.3);
+        }
+      }
+    }
+  }
+
+  a[title=review-next] {
+    @media ($desktop-width) {
+      right: 10%;
+      left: auto;
+    }
+  }
 
   @media ($tablet-width) {
     padding: 0 40px 15px;
   }
 
-    @media ($desktop-width) {
+  @media ($desktop-width) {
     padding: 0 40px 45px;
+    margin-top: 65px;
+
+    &:before {
+      content: '';
+      background-image: url(../img/icon-quotes.svg);
+      background-repeat: no-repeat;
+      background-position-x: 65%;
+      margin: 0 auto;
+      height: 100px;
+      width: 100px;
+      display: block;
+    }
   }
+
 }
 
 .feedback-slider__list {
   line-height: 30px;
-
-  @media ($desktop-width) {
-    padding-top: 140px;
-  }
 }
 
 .feedback-slider__item {

@@ -101,18 +101,14 @@
 
   img {
     @media ($tablet-width) {
-      height: 540px;
       max-width: 100%;
     }
     @media ($desktop-width) {
-      min-height: 390px;
-      height: auto;
-      //width: 69%;
+      height: 300px;
     }
   }
 
   @media ($tablet-width) {
-    //flex-basis: 50%;
     margin-top: -70px;
     position: relative;
   }
@@ -122,6 +118,7 @@
     padding: 0 5px;
     width: 30%;
     margin-top: -100px;
+    margin-bottom: 0;
   }
 }
 
