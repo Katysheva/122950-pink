@@ -68,9 +68,14 @@
       fill: $white-color;
     }
   }
+
   @include color-change-w-p-g();
 
   &--active {
+    display: none;
+  }
+
+  &--active-desktop {
     display: none;
   }
 }
@@ -83,8 +88,26 @@
       display: block;
       padding: 5px 7px;
     }
-  }
 
+    &--active-desktop {
+      display: none;
+    }
+  }
+}
+
+@media ($desktop-width) {
+  .logo {
+    display: none;
+
+    &--active {
+      display: none;
+    }
+
+    &--active-desktop {
+      display: block;
+      padding: 5px 7px;
+    }
+  }
 }
 
 .page-header-menu__navigation-list {
@@ -110,134 +133,152 @@
   }
 }
 
-  .page-header-menu__toggle {
-    @include color-change-w-p-p();
+.page-header-menu__toggle {
+  @include color-change-w-p-p();
+}
+
+.rounded-button--white {
+  &:hover,
+  &:focus {
+    background-color: $white-color;
+    color: $pink-color;
   }
 
-  .rounded-button--white {
-    &:hover, &:focus {
-      background-color: $white-color;
-      color: $pink-color;
-    }
-
-    &:active {
-      color: rgba($pink-color, 0.3);
-    }
+  &:active {
+    color: rgba($pink-color, 0.3);
   }
+}
 
-  .bullet-button {
-    &:hover,
-    &:focus {
-      svg {
-        fill: rgba($grey-color, 0.6);
-      }
-    }
-
-    &:active {
-      svg {
-        fill: rgba($grey-color, 0.3);
-      }
-    }
-  }
-
-  .email {
-    @include color-change-p-b-g();
-  }
-
-  .html-academy-icon {
-    @include color-change-p-b-g();
-  }
-
-  .footer-logo__item {
-    &:hover,
-    &:focus {
-      svg {
-        fill: $pink-color;
-      }
-    }
-    &:active {
-      svg {
-        fill: $grey-color;
-        opacity: 0.3;
-      }
-    }
-  }
-
-  .social-icons__item {
+.bullet-button {
+  &:hover,
+  &:focus {
     svg {
-      fill: $pink-color;
-    }
-    &:hover,
-    &:focus {
-      border-color: $grey-color;
-    }
-    &:active {
-      border-color: #f2f2f2;
-      svg {
-        fill: rgba($pink-color, 0.3);
-      }
+      fill: rgba($grey-color, 0.6);
     }
   }
 
-  .rectangular-button {
-    &:hover,
-    &:focus {
-      background-color: #1c9b5e;
-    }
-
-    &:active {
-      background-color: #1c9b5e;
-      color: rgba($white-color, 0.3);
-    }
-
-    &:disabled {
-      background-color: #e5e5e5;
-      color: $white-color;
-    }
-  }
-
-  .photo-posting__filter {
+  &:active {
     svg {
       fill: rgba($grey-color, 0.3);
     }
+  }
+}
+
+.email {
+  @include color-change-p-b-g();
+}
+
+.html-academy-icon {
+  @include color-change-p-b-g();
+}
+
+.footer-logo__item {
+  &:hover,
+  &:focus {
+    svg {
+      fill: $pink-color;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: $grey-color;
+      opacity: 0.3;
+    }
+  }
+
+  @media ($desktop-width) {
+    display: none;
+  }
+
+  &--active-desktop {
+    display: none;
+
+    @media ($desktop-width) {
+      display: block;
+    }
+  }
+}
+
+.social-icons__item {
+  svg {
+    fill: $pink-color;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $grey-color;
+  }
+
+  &:active {
+    border-color: #f2f2f2;
+
+    svg {
+      fill: rgba($pink-color, 0.3);
+    }
+  }
+}
+
+.rectangular-button {
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    background-color: #1c9b5e;
+    color: rgba($white-color, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    color: $white-color;
+  }
+}
+
+.photo-posting__filter {
+  svg {
+    fill: rgba($grey-color, 0.3);
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: rgba($grey-color, 0.6);
+    }
+  }
+
+  &:active {
+    svg {
+      fill: $pink-color;
+    }
+  }
+}
+
+.rounded-button {
+  &--pink {
     &:hover,
     &:focus {
-      svg {
-        fill: rgba($grey-color, 0.6);
-      }
+      background-color: $pink-color;
+      color: $white-color;
     }
 
     &:active {
-      svg {
-        fill: $pink-color;
-      }
+      color: rgba($white-color, 0.3);
     }
   }
 
-  .rounded-button {
-    &--pink {
-      &:hover,
-      &:focus {
-        background-color: $pink-color;
-        color: $white-color;
-      }
-
-      &:active {
-        color: rgba($white-color, 0.3);
-      }
+  &--grey {
+    &:hover,
+    &:focus {
+      border-color: rgba($grey-color, 0.3);
+      color: rgba($grey-color, 0.3);
     }
 
-    &--grey {
-      &:hover,
-      &:focus {
-        border-color: rgba($grey-color, 0.3);
-        color: rgba($grey-color, 0.3);
-      }
-
-      &:active {
-        color: rgba($white-color, 0.3);
-        background-color: rgba($grey-color, 0.3);
-        border-color: rgba($grey-color, 0);
-      }
+    &:active {
+      color: rgba($white-color, 0.3);
+      background-color: rgba($grey-color, 0.3);
+      border-color: rgba($grey-color, 0);
     }
   }
+}
