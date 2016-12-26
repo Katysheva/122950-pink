@@ -103,7 +103,6 @@
 .tariff-feature__access {
   padding: 14px 20px;
 
-
   &--enable svg {
     fill: #3dc644;
   }
@@ -115,9 +114,9 @@
       padding: 0;
     }
 
-    @media ($desktop-width) {
-      padding: 0 102px 0 65px;
-    }
+    //@media ($desktop-width) {
+    //  padding: 0 102px 0 65px;
+    //}
   }
   @media ($tablet-width) {
     padding: 7px 20px;
