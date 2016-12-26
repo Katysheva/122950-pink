@@ -153,14 +153,14 @@
       }
     }
 
-    &:nth-of-type(n+3) {
+    &:nth-of-type(n+4) {
       @media ($desktop-width) {
         padding-bottom: 0;
       }
     }
 
     @media ($desktop-width) {
-      flex-basis: 33%;
+      width: 32%;
       padding-bottom: 20px;
     }
   }
@@ -173,6 +173,7 @@
 
   @media ($desktop-width) {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
