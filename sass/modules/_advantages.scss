@@ -49,8 +49,6 @@
   }
 }
 
-
-
 .advantages__item-title {
   font-family: $opensans-bold;
   font-size: 18px;
@@ -92,6 +90,7 @@
     padding-top: 55px;
     text-align: center;
     justify-content: space-between;
+    flex-basis: auto;
   }
 }
 
