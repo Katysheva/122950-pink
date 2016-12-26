@@ -63,6 +63,8 @@
 
 .post-card__title {
   font-family: $opensans-bold;
+  font-weight: 100;
+  font-size: 14px;
 
   span {
     font-family: $opensans-light;
@@ -127,6 +129,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 30px;
+  }
+
+  @media ($desktop-width) {
+    padding: 27px 130px 0;
   }
 }
 

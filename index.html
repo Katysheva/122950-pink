@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <script defer src="js/open-menu.js"></script>
 </head>
 <body>
@@ -43,10 +43,9 @@
     </div>
   </div>
 
-  <section class="page-header page-header--main-page">
+  <div class="page-header page-header--main-page">
 
     <div class="page-header__content">
-
       <section class="download">
         <div class="page-header__title">
           <h1>Взгляните на жизнь иначе!</h1>
@@ -71,7 +70,7 @@
         </picture>
       </div>
     </div>
-  </section>
+  </div>
 </header>
 
 <main>
@@ -123,14 +122,14 @@
           <picture>
             <source media="(min-width: 960px)"
                     srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x"/>
-            <img src="img/iphone-screen-2-tablet@1x.png 1x" srcset="img/iphone-screen-2-tablet@x.png 2x" alt="Hand">
+            <img src="img/iphone-screen-2-tablet@1x.png" srcset="img/iphone-screen-2-tablet@x.png 2x" alt="Hand">
           </picture>
         </div>
         <div class="advantages__img">
           <picture>
             <source media="(min-width: 960px)"
                     srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x"/>
-            <img src="img/iphone-screen-3-tablet@1x.png 1x" srcset="img/iphone-screen-3-tablet@x.png 2x" alt="Hand">
+            <img src="img/iphone-screen-3-tablet@1x.png" srcset="img/iphone-screen-3-tablet@x.png 2x" alt="Hand">
           </picture>
         </div>
       </div>
@@ -163,7 +162,7 @@
 
   <section class="feedback-slider">
     <a href="#" title="review-prev">
-      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
         <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
       </svg>
 
@@ -195,7 +194,7 @@
     </ul>
 
     <a href="#" title="review-next">
-      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
         <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
       </svg>
 
@@ -241,28 +240,27 @@
         </a>
       </li>
     </ul>
-
   </section>
 
-  <section class="tariffs">
+  <div class="tariffs">
     <div class="tariffs-table">
       <table class="tariffs__list">
         <thead>
         <tr>
           <th class="tariff-feature__name tariff-feature__name--invisible"></th>
           <th class="tariffs__item">
-            <h3>база</h3>
+            <p class="tariffs__item-title">база</p>
             <p>1,99 USD</p>
           </th>
           <th class="tariffs__item">
             <div class="tariff__item-hit">
               <span class="tariff__item-hit--name">хит</span>
             </div>
-            <h3>стандарт</h3>
+            <p class="tariffs__item-title">стандарт</p>
             <p>3,99 USD</p>
           </th>
           <th class="tariffs__item">
-            <h3>анлим</h3>
+            <p class="tariffs__item-title">анлим</p>
             <p>9,99 USD</p>
           </th>
         </tr>
@@ -385,7 +383,7 @@
         </svg>
       </li>
     </ul>
-  </section>
+  </div>
 
 </main>
 
@@ -399,7 +397,7 @@
     <ul class="contacts__list">
       <li class="contacts__list-item">
         <h3>Звоните:</h3>
-        <a href="tel:+7 (812) 555-66-66" class="tel accent-color-text">+7 (812) 555-66-66</a>
+        <a href="tel:+78125556666" class="tel accent-color-text">+7 (812) 555-66-66</a>
       </li>
       <li class="contacts__list-item">
         <h3>Пишите:</h3>

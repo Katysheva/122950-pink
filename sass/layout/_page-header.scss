@@ -1,5 +1,6 @@
 header {
   position: relative;
+
   @media ($tablet-width) {
     background: $grey-color;
   }
@@ -22,7 +23,7 @@ header {
   }
 
   @media ($desktop-width) {
-    min-height: 395px;
+    min-height: 397px;
     padding: 175px 0 0;
     background-image: url(../img/bg-back-desktop@1x.jpg);
   }
@@ -77,6 +78,7 @@ header {
 
 .page-header__title {
   padding: 0 20px;
+
   @media ($tablet-width) {
     padding: 0 50px 28px 50px;
   }
@@ -103,6 +105,7 @@ header {
 
     @media ($desktop-width) {
       padding: 0 30%;
+      line-height: 55px;
     }
   }
 }
@@ -138,7 +141,6 @@ header {
 
 .page-header__hand-img {
   width: 100%;
-  //padding-top: 110px;
   padding-right: 60px;
 
   img {

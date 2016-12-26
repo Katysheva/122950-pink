@@ -47,9 +47,14 @@
   font-size: 14px;
   font-weight: 100;
   padding: 50px 0 40px;
+
   @media ($tablet-width) {
     font-size: 18px;
     padding: 65px 0;
+  }
+
+  @media ($desktop-width) {
+    padding: 60px 0;
   }
 }
 

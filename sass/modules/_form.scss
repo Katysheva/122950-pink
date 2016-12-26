@@ -127,7 +127,7 @@
       top: -25px;
       left: 50%;
       transform: translateX(-50%);
-      min-width: 75%;
+      //min-width: 85%;
       padding: 10px;
     }
   }
@@ -161,6 +161,7 @@
 
     @media ($desktop-width) {
       flex-basis: 33%;
+      padding-bottom: 20px;
     }
   }
 
@@ -249,7 +250,7 @@
     }
 
     @media ($desktop-width) {
-      flex-basis: 44%;
+      flex-basis: 46%;
     }
   }
 
@@ -391,12 +392,20 @@
   padding-top: 37px;
   text-transform: uppercase;
 
-  span {
+  @media ($tablet-width) {
+    padding-top: 0;
+  }
+
+  &--symbol {
     color: $pink-color;
   }
 
-  @media ($tablet-width) {
-    padding-top: 0;
+  &--desktop {
+    display: none;
+
+    @media ($desktop-width) {
+      display: inline-block;
+    }
   }
 }
 
@@ -411,6 +420,7 @@
 
   @media ($desktop-width) {
     margin: 0;
+    padding: 55px 70px
   }
 }
 
@@ -428,6 +438,7 @@
   @media ($desktop-width) {
     margin-bottom: 25px;
   }
+
   &--initials {
     padding-bottom: 25px;
 
@@ -437,7 +448,7 @@
     }
 
     @media ($desktop-width) {
-      flex-basis: 45%;
+      flex-basis: 46%;
     }
   }
 
@@ -467,8 +478,7 @@
       padding-top: 40px;
 
       .form__tabl-padding {
-        padding-top: 40px;
-        padding-bottom: 10px;
+        padding: 30px 55px 13px;
       }
     }
   }
@@ -479,7 +489,7 @@
     }
 
     @media ($desktop-width) {
-      flex-basis: 45%;
+      flex-basis: 46%;
     }
   }
 
@@ -511,5 +521,9 @@
   @media ($desktop-width) {
     margin-bottom: 0;
   }
+}
+
+.pop-up {
+  display: none;
 }
 
