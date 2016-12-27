@@ -15,7 +15,7 @@
   }
 
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -122,11 +122,8 @@
     @media ($tablet-width) {
       padding: 0;
     }
-
-    //@media ($desktop-width) {
-    //  padding: 0 102px 0 65px;
-    //}
   }
+
   @media ($tablet-width) {
     padding: 7px 20px;
   }
@@ -171,7 +168,22 @@
   }
 }
 
-.tariff__item-hit {
+.tariffs__items {
+
+}
+
+.tariffs__title {
+  display: none;
+
+  @media ($tablet-width) {
+    display: table-cell;
+    padding: 0 15px;
+    min-width: 155px;
+  }
+}
+
+
+.tariffs__item-hit {
   position: absolute;
   background-image: url(../img/bg-hit.svg);
   background-size: contain;
