@@ -162,7 +162,22 @@
   }
 }
 
-.tariff__item-hit {
+.tariffs__items {
+
+}
+
+.tariffs__title {
+  display: none;
+
+  @media ($tablet-width) {
+    display: table-cell;
+    padding: 0 15px;
+    min-width: 155px;
+  }
+}
+
+
+.tariffs__item-hit {
   position: absolute;
   background-image: url(../img/bg-hit.svg);
   background-size: contain;

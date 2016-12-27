@@ -13,52 +13,6 @@
       margin-top: 20px;
     }
   }
-  img {
-    @media ($tablet-width) {
-      min-height: 300px;
-    }
-    @media ($desktop-width) {
-      min-height: 400px;
-    }
-  }
-
-  &--top {
-    @include container();
-
-    .post-card__post {
-      @media ($tablet-width) {
-        min-height: 125px;
-      }
-      @media ($desktop-width) {
-        min-height: 100px;
-      }
-    }
-
-    .post-card__like {
-      a {
-        padding-left: 32px;
-
-        &:before {
-          @media ($desktop-width) {
-            left: 0;
-            bottom: 5px;
-          }
-        }
-      }
-
-      @media ($tablet-width) {
-        position: absolute;
-        right: 17px;
-        top: 17px;
-      }
-    }
-
-    @media ($desktop-width) {
-      &:nth-of-type(1) {
-        margin-top: 0;
-      }
-    }
-  }
 }
 
 .post-card__title {
@@ -77,33 +31,6 @@
   padding-top: 10px;
   position: relative;
   font-size: 12px;
-
-  a {
-    text-transform: uppercase;
-    color: $pink-color;
-    position: relative;
-    padding-left: 32px;
-
-    @media ($desktop-width) {
-      display: block;
-      padding-left: 0;
-    }
-
-    &::before {
-      content: '';
-      background-image: url(../img/icon-heart.svg);
-      height: 13px;
-      position: absolute;
-      width: 13px;
-      background-repeat: no-repeat;
-      left: 0;
-      bottom: 2px;
-
-      @media ($desktop-width) {
-        left: calc(100% - 15px);
-      }
-    }
-  }
 }
 
 .post-card__post {
@@ -136,18 +63,42 @@
   }
 }
 
-.post-card__photo {
+.post-card__like-link {
+  text-transform: uppercase;
+  color: $pink-color;
+  position: relative;
+  padding-left: 32px;
 
-  &--top {
-    position: relative;
-
-    @media ($tablet-width) {
-      min-height: 505px;
-      overflow: hidden;
-    }
+  @media ($desktop-width) {
+    display: block;
+    padding-left: 0;
   }
 
-  &--top img {
+  &::before {
+    content: '';
+    background-image: url(../img/icon-heart.svg);
+    height: 13px;
+    position: absolute;
+    width: 13px;
+    background-repeat: no-repeat;
+    left: 0;
+    bottom: 2px;
+
+    @media ($desktop-width) {
+      left: calc(100% - 15px);
+    }
+  }
+}
+
+.top-post {
+  position: relative;
+
+  @media ($tablet-width) {
+    min-height: 505px;
+    overflow: hidden;
+  }
+
+  img {
     width: 100%;
 
     @media ($tablet-width) {
@@ -158,6 +109,62 @@
       max-height: 510px;
       transform: none;
       width: 100%;
+    }
+  }
+}
+
+.top-post__text {
+  @include container();
+
+  .post-card__post {
+    @media ($tablet-width) {
+      min-height: 125px;
+    }
+    @media ($desktop-width) {
+      min-height: 100px;
+    }
+  }
+
+  .post-card__like {
+    @media ($tablet-width) {
+      position: absolute;
+      right: 17px;
+      top: 17px;
+    }
+  }
+
+  @media ($desktop-width) {
+    &:nth-of-type(1) {
+      margin-top: 0;
+    }
+  }
+}
+
+.top-post__like-link {
+  text-transform: uppercase;
+  color: $pink-color;
+  position: relative;
+  padding-left: 32px;
+
+  @media ($desktop-width) {
+    display: block;
+    // padding-left: 0;
+    padding-left: 32px;
+  }
+
+  &::before {
+    content: '';
+    background-image: url(../img/icon-heart.svg);
+    height: 13px;
+    position: absolute;
+    width: 13px;
+    background-repeat: no-repeat;
+    left: 0;
+    bottom: 2px;
+
+    @media ($desktop-width) {
+      left: 0;
+      bottom: 5px
     }
   }
 }
