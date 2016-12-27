@@ -27,11 +27,20 @@
 }
 
 .tariffs-table {
-  width: 630px;
-  margin: 0 auto;
-  overflow: hidden;
+  //width: 630px;
+  //margin: 0 auto;
+  //overflow: hidden;
 
   @media ($desktop-width) {
+    width: auto;
+  }
+}
+
+.tariffs__list-wrapper {
+  width: 320px;
+  overflow: hidden;
+  margin: 0 auto;
+  @media ($tablet-width) {
     width: auto;
   }
 }
