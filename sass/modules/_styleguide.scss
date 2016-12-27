@@ -134,7 +134,21 @@
 }
 
 .page-header-menu__toggle {
-  @include color-change-w-p-p();
+  svg {
+    fill: $white-color;
+  }
+
+  &:hover {
+    svg {
+      fill: $pink-color;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: rgba($white-color, 0.3);
+    }
+  }
 }
 
 .rounded-button--white {
