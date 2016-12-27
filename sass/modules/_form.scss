@@ -175,13 +175,13 @@
 }
 
 .form__achievements-item {
-  input[type="checkbox"] {
+  input[type='checkbox'] {
     display: none;
   }
 
   label {
     &:before {
-      content: "";
+      content: '';
       display: inline-block;
       vertical-align: middle;
       width: 35px;
@@ -206,7 +206,7 @@
   }
 
   input[type=checkbox]:checked + label::before {
-    background-image: url("../img/icon-yes.svg");
+    background-image: url('../img/icon-yes.svg');
     width: 35px;
     height: 35px;
     position: absolute;
@@ -301,7 +301,7 @@
     font-size: 18px;
 
     &::before {
-      content: "";
+      content: '';
       display: inline-block;
       vertical-align: middle;
       width: 40px;
@@ -328,12 +328,12 @@
     }
   }
 
-  input[type="radio"] {
+  input[type='radio'] {
     display: none;
   }
 
   input[type=radio]:checked + label::before {
-    background-image: url("../img/icon-map-marker.svg");
+    background-image: url('../img/icon-map-marker.svg');
     position: absolute;
     background-repeat: no-repeat;
     background-position: 50%;
